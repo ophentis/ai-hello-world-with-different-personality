@@ -1,14 +1,25 @@
 const fs = require('fs');
 const path = require('path');
 
-const dir = '/tmp/hello-world-experiment';
-const files = fs.readdirSync(dir)
-  .filter(f => f.match(/^\d{3}_.*\.js$/) && f !== 'analyze.js')
-  .sort();
+const baseDir = path.resolve(__dirname, '..');
+const personalitiesDir = path.join(baseDir, 'personalities');
+
+const files = [];
+for (const sub of fs.readdirSync(personalitiesDir)) {
+  const subPath = path.join(personalitiesDir, sub);
+  if (fs.statSync(subPath).isDirectory()) {
+    for (const f of fs.readdirSync(subPath)) {
+      if (f.match(/^\d{3}_.*\.js$/)) files.push({ file: f, dir: subPath });
+    }
+  } else if (sub.match(/^\d{3}_.*\.js$/)) {
+    files.push({ file: sub, dir: personalitiesDir });
+  }
+}
+files.sort((a, b) => a.file.localeCompare(b.file));
 
 const results = [];
 
-for (const file of files) {
+for (const { file, dir } of files) {
   const content = fs.readFileSync(path.join(dir, file), 'utf8');
   const lines = content.split('\n');
   const nonEmptyLines = lines.filter(l => l.trim().length > 0);
@@ -58,7 +69,7 @@ for (const file of files) {
   const name = file.replace(/^\d{3}_/, '').replace('.js', '').replace(/_/g, ' ');
 
   results.push({
-    num, name, file,
+    num, name, file, fullPath: path.join(dir, file),
     totalLines: lines.length,
     nonEmptyLines: nonEmptyLines.length,
     commentLines: commentLines.length,
@@ -123,7 +134,8 @@ for (const [name, vals] of Object.entries(metrics)) {
 }
 
 // Feature usage
-console.log('\n--- FEATURE USAGE (% of 200 files) ---\n');
+const total = results.length;
+console.log(`\n--- FEATURE USAGE (% of ${total} files) ---\n`);
 const features = [
   ['class', results.filter(r => r.hasClass).length],
   ['function keyword', results.filter(r => r.hasFunction).length],
@@ -135,9 +147,9 @@ const features = [
   ['template literals', results.filter(r => r.hasTemplate).length],
 ];
 for (const [name, count] of features.sort((a, b) => b[1] - a[1])) {
-  const pct = ((count / 200) * 100).toFixed(0);
+  const pct = ((count / total) * 100).toFixed(0);
   const bar = '█'.repeat(Math.round(count / 4));
-  console.log(`  ${name.padEnd(24)} ${String(count).padStart(3)}/200 (${pct.padStart(2)}%) ${bar}`);
+  console.log(`  ${name.padEnd(24)} ${String(count).padStart(3)}/${total} (${pct.padStart(2)}%) ${bar}`);
 }
 
 // EXTREMES
@@ -205,7 +217,7 @@ for (let i = 0; i < 20; i++) {
 console.log('\n  Bottom 5 most "standard" personalities (lowest combined z-score):');
 for (let i = results.length - 1; i >= results.length - 5; i--) {
   const r = byDeviation[i];
-  console.log(`  ${String(200 - i).padEnd(6)}${r.name.padEnd(32)}${r.compositeZ.toFixed(2).padStart(8)}`);
+  console.log(`  ${String(results.length - i).padEnd(6)}${r.name.padEnd(32)}${r.compositeZ.toFixed(2).padStart(8)}`);
 }
 
 // Category analysis
@@ -247,7 +259,7 @@ let passed = 0, failed = 0, errors = [];
 for (const r of results) {
   try {
     const { execSync } = require('child_process');
-    const output = execSync(`node "${path.join(dir, r.file)}" 2>&1`, { timeout: 5000 }).toString();
+    const output = execSync(`node "${r.fullPath}" 2>&1`, { timeout: 5000 }).toString();
     if (output.length > 0) {
       passed++;
     } else {
@@ -260,8 +272,8 @@ for (const r of results) {
     errors.push({ name: r.name, error: msg });
   }
 }
-console.log(`  Passed (produced output): ${passed}/200`);
-console.log(`  Failed: ${failed}/200`);
+console.log(`  Passed (produced output): ${passed}/${total}`);
+console.log(`  Failed: ${failed}/${total}`);
 if (errors.length > 0) {
   console.log('\n  Failures:');
   for (const e of errors) {

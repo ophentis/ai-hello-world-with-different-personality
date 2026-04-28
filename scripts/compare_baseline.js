@@ -2,13 +2,25 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
-const dir = '/tmp/hello-world-experiment';
-const files = fs.readdirSync(dir)
-  .filter(f => f.match(/^\d{3}_.*\.js$/) && !['analyze.js', 'compare_baseline.js'].includes(f))
-  .sort();
+const baseDir = path.resolve(__dirname, '..');
+const personalitiesDir = path.join(baseDir, 'personalities');
+
+const fileEntries = [];
+for (const sub of fs.readdirSync(personalitiesDir)) {
+  const subPath = path.join(personalitiesDir, sub);
+  if (fs.statSync(subPath).isDirectory()) {
+    for (const f of fs.readdirSync(subPath)) {
+      if (f.match(/^\d{3}_.*\.js$/)) fileEntries.push({ file: f, dir: subPath });
+    }
+  } else if (sub.match(/^\d{3}_.*\.js$/)) {
+    fileEntries.push({ file: sub, dir: personalitiesDir });
+  }
+}
+fileEntries.sort((a, b) => a.file.localeCompare(b.file));
+const files = fileEntries;
 
 // === ANALYZE EACH FILE ===
-function analyze(file) {
+function analyze({ file, dir }) {
   const content = fs.readFileSync(path.join(dir, file), 'utf8');
   const lines = content.split('\n');
   const nonEmpty = lines.filter(l => l.trim().length > 0);

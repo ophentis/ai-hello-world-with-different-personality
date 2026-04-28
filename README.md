@@ -6,14 +6,55 @@ An experiment: what happens when you ask an AI to write "Hello World" in JavaScr
 
 500 personalities — from anime characters to scientists, villains to children's TV icons, Greek gods to sitcom characters — each "wrote" a Hello World JS program. Every file is valid Node.js. The analysis script compares them statistically.
 
+## Project Structure
+
+```
+personalities/           # 500 Hello World programs + 1 baseline
+  000_baseline.js        # No-personality baseline
+  anime/                 # 60 files (Naruto, Goku, Saitama, ...)
+  action-film/           # 20 files (Jackie Chan, John Wick, ...)
+  artists/               # 6 files (Frida Kahlo, Picasso, ...)
+  celebrities/           # 10 files (Oprah, Gordon Ramsay, ...)
+  childrens-characters/  # 10 files (Winnie the Pooh, Kermit, ...)
+  doctor-who-bbc/        # 9 files (The Doctor, Dalek, ...)
+  filmmakers-comedians/  # 20 files (Kubrick, Tarantino, ...)
+  game-of-thrones/       # 10 files (Tyrion, Arya, Hodor, ...)
+  historical-figures/    # 30 files (Cleopatra, Napoleon, ...)
+  literary-authors/      # 23 files (Shakespeare, Poe, ...)
+  literary-characters/   # 39 files (Gatsby, Dracula, ...)
+  lotr-tolkien/          # 20 files (Gandalf, Sauron, ...)
+  musicians/             # 24 files (Freddie Mercury, ...)
+  mythology/             # 10 files (Zeus, Loki, Medusa, ...)
+  scientists/            # 15 files (Einstein, Tesla, ...)
+  sports/                # 10 files (Jordan, Ali, Messi, ...)
+  star-trek/             # 13 files (Spock, Picard, Data, ...)
+  star-wars/             # 25 files (Yoda, Vader, Grogu, ...)
+  superheroes/           # 15 files (Batman, Spider-Man, ...)
+  tech-ceos/             # 5 files (Elon Musk, Steve Jobs, ...)
+  tv-drama/              # 19 files (Walter White, BoJack, ...)
+  tv-sitcoms/            # 46 files (Michael Scott, Homer, ...)
+  video-games/           # 59 files (Mario, Link, GLaDOS, ...)
+  villains/              # 2 files (Hannibal Lecter, ...)
+scripts/                 # Analysis scripts
+  analyze.js             # Statistical analysis across all files
+  compare_baseline.js    # Baseline comparison & dev fitness scoring
+results/                 # Pre-generated analysis output
+  ANALYSIS_RESULTS.md    # Full statistical report
+  BASELINE_COMPARISON.md # Baseline comparison & recommendations
+data/                    # Personality lists
+```
+
 ## Run
 
 ```bash
 # Run any personality's Hello World
-node 079_groot.js
+node personalities/anime/079_groot.js
 
 # Run the full statistical analysis
-node analyze.js
+node scripts/analyze.js
+
+# Run baseline comparison & development fitness scoring
+node scripts/compare_baseline.js
 ```
 
 ## Key Findings
