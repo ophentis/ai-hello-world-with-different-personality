@@ -1,0 +1,179 @@
+================================================================================
+HELLO WORLD PERSONALITY EXPERIMENT — STATISTICAL ANALYSIS
+================================================================================
+Total files analyzed: 501
+
+--- OVERALL STATISTICS ---
+
+Metric                          Mean  Median  StdDev     Min     Max
+--------------------------------------------------------------------
+Total Lines                     25.7    25.0     9.0       2      57
+Non-Empty Lines                 19.4    18.0     7.3       1      44
+Comment Lines                    7.8     7.0     4.1       0      23
+Code Lines                      11.6    10.0     7.6       1      33
+Total Characters               645.2   626.0   226.5      30    1521
+Comment Ratio (%)               53.8    58.0    24.7       0      93
+Vocabulary Richness (%)         69.3    69.0     9.0      32     100
+Avg Line Length                 33.0    32.0     7.3      14      60
+Console.log Count                2.2     1.0     2.1       0      14
+Complexity Score (0-12)          2.1     2.0     1.3       0       7
+Exclamation Marks                3.2     1.0     3.8       0      27
+ALL CAPS Words                   3.1     0.0     7.5       0      87
+
+--- FEATURE USAGE (% of 200 files) ---
+
+  function keyword         251/200 (125%) ███████████████████████████████████████████████████████████████
+  loops (for/while)        137/200 (69%) ██████████████████████████████████
+  conditionals (if/switch) 102/200 (51%) ██████████████████████████
+  arrow function           100/200 (50%) █████████████████████████
+  class                     84/200 (42%) █████████████████████
+  template literals         42/200 (21%) ███████████
+  try/catch                  8/200 ( 4%) ██
+  async/await                4/200 ( 2%) █
+
+--- MOST EXTREME PERSONALITIES ---
+
+  SHORTEST (fewest lines):
+    1. baseline                       = 2
+    2. saitama                        = 7
+    3. kurt cobain                    = 7
+    4. gandalf white                  = 7
+    5. hodor                          = 10
+
+  LONGEST (most lines):
+    1. rocket raccoon                 = 57
+    2. dr strange                     = 54
+    3. thanos                         = 52
+    4. black panther                  = 52
+    5. elsa                           = 47
+
+  MOST COMMENTS (highest comment ratio):
+    1. ross geller                    = 93%
+    2. rachel green                   = 93%
+    3. george costanza                = 93%
+    4. jerry seinfeld                 = 93%
+    5. cat hat                        = 92%
+
+  LEAST COMMENTS (lowest comment ratio):
+    1. baseline                       = 0%
+    2. megumin konosuba               = 5%
+    3. claptrap                       = 5%
+    4. tom nook                       = 5%
+    5. kazuya                         = 5%
+
+  MOST COMPLEX (highest complexity score):
+    1. ethan hunt                     = 7
+    2. aloy                           = 7
+    3. nathan drake                   = 6
+    4. walter white                   = 5
+    5. arthur morgan                  = 5
+
+  SIMPLEST (lowest complexity score):
+    1. baseline                       = 0
+    2. saitama                        = 0
+    3. hemingway                      = 0
+    4. sherlock                       = 0
+    5. iron man                       = 0
+
+  MOST VERBOSE (most characters):
+    1. rocket raccoon                 = 1521
+    2. dr strange                     = 1418
+    3. sigmund freud                  = 1262
+    4. hermione                       = 1246
+    5. ada lovelace                   = 1240
+
+  MOST CONCISE (fewest characters):
+    1. baseline                       = 30
+    2. hodor                          = 106
+    3. kurt cobain                    = 112
+    4. sasuke                         = 158
+    5. saitama                        = 179
+
+  MOST EXCLAMATIONS (!):
+    1. luffy                          = 27
+    2. dalek                          = 25
+    3. daffy duck                     = 24
+    4. kevin hart                     = 24
+    5. donkey                         = 22
+
+  MOST ALL-CAPS WORDS:
+    1. kevin hart                     = 87
+    2. dalek                          = 84
+    3. eren                           = 43
+    4. donkey                         = 32
+    5. achilles                       = 32
+
+  MOST console.log CALLS:
+    1. megumin konosuba               = 14
+    2. aqua konosuba                  = 11
+    3. garrus                         = 11
+    4. tali                           = 11
+    5. wrex                           = 11
+
+  RICHEST VOCABULARY:
+    1. baseline                       = 100%
+    2. geralt                         = 95%
+    3. kurt cobain                    = 93%
+    4. boba fett                      = 92%
+    5. lovecraft                      = 91%
+
+--- BIGGEST OVERALL DEVIATIONS (composite z-score) ---
+
+  Top 20 most "different" personalities (highest combined z-score):
+  Rank  Personality                      Z-Score  Key deviations
+  --------------------------------------------------------------------------------
+  1     dalek                              22.56  totalLines↑2.0, exclamations↑5.7, allCapsWords↑10.7
+  2     kevin hart                         20.17  exclamations↑5.4, allCapsWords↑11.1
+  3     megumin konosuba                   18.16  totalLines↑1.6, commentRatio↓2.0, totalChars↑2.4, exclamations↑1.5, allCapsWords↑1.9, consoleLogCount↑5.7, vocabularyRichness↓1.7
+  4     donkey                             14.58  complexityScore↓1.7, exclamations↑4.9, allCapsWords↑3.8, vocabularyRichness↓1.9
+  5     baseline                           14.20  totalLines↓2.6, commentRatio↓2.2, complexityScore↓1.7, totalChars↓2.7, vocabularyRichness↑3.4
+  6     aqua konosuba                      13.48  totalLines↑1.6, commentRatio↓1.8, complexityScore↑2.3, totalChars↑1.9, consoleLogCount↑4.2
+  7     senku ishigami                     13.14  totalLines↑1.9, commentRatio↓1.8, totalChars↑2.0, allCapsWords↑1.9, consoleLogCount↑1.8
+  8     rocket raccoon                     12.91  totalLines↑3.5, totalChars↑3.9
+  9     spongebob squarepants              12.41  exclamations↑4.1, allCapsWords↑3.2, vocabularyRichness↓2.8
+  10    handsome jack                      12.36  commentRatio↓1.6, totalChars↑1.9, consoleLogCount↑4.2
+  11    mordin                             12.21  commentRatio↓1.7, totalChars↑2.1, consoleLogCount↑4.2
+  12    aloy                               11.80  complexityScore↑3.9, consoleLogCount↑2.8
+  13    marie curie                        11.72  totalLines↑2.0, totalChars↑2.3, exclamations↑2.1, vocabularyRichness↓2.3
+  14    garrus                             11.58  consoleLogCount↑4.2
+  15    nathan drake                       11.55  commentRatio↓1.7, complexityScore↑3.1, consoleLogCount↑2.8
+  16    jar jar binks                      11.52  exclamations↑2.8, consoleLogCount↑3.3
+  17    kurapika                           11.45  totalLines↑1.8, commentRatio↓1.7, complexityScore↑2.3, totalChars↑1.6, consoleLogCount↑2.3
+  18    kazuma satou                       11.39  totalLines↑1.8, commentRatio↓1.9, complexityScore↑2.3, totalChars↑1.8, consoleLogCount↑2.3
+  19    wrex                               11.34  commentRatio↓1.6, consoleLogCount↑4.2
+  20    genie                              11.28  totalChars↑1.6, exclamations↑3.1, allCapsWords↑2.1
+
+  Bottom 5 most "standard" personalities (lowest combined z-score):
+  -300  bruce lee                           2.23
+  -299  jackie chan                         2.28
+  -298  christopher nolan                   2.33
+  -297  bugs bunny                          2.36
+  -296  stanley kubrick                     2.42
+
+--- CATEGORY COMPARISON ---
+
+Category                 AvgLines AvgChars AvgCmplx  Avg! AvgCmt%
+-----------------------------------------------------------------
+Anime                        22.9      565      2.0   6.4     59%
+Tech CEOs                    30.6      878      2.6   1.4     69%
+Celebrities                  27.8      769      2.2   4.2     84%
+Scientists/Thinkers          35.8     1086      3.2   1.6     64%
+Literary Authors             17.4      543      1.0   2.0     77%
+Superheroes                  19.4      540      1.3   3.2     74%
+Villains                     42.0      836      3.0  12.5     52%
+Sitcom Characters            27.1      724      2.3   4.6     61%
+Video Game Characters        33.1      692      2.9   3.0     39%
+Historical Figures           32.8      798      2.8   4.2     50%
+Musicians                    29.3      638      2.2   2.0     34%
+Action Heroes                29.1      683      2.3   2.7     55%
+AIs/Robots                   31.0      723      2.2   1.7     57%
+Childrens Characters         19.1      562      0.7   5.1     85%
+
+--- RUNTIME VALIDITY CHECK ---
+
+  Passed (produced output): 501/200
+  Failed: 0/200
+
+================================================================================
+END OF ANALYSIS
+================================================================================
