@@ -1,4 +1,4 @@
-# Baseline Comparison: "No Personality" vs 500 Personalities
+# Baseline Comparison: "No Personality" vs 600 Personalities
 
 ## The Baseline
 
@@ -21,20 +21,20 @@ console.log("Hello, World!");
 
 ## How Personalities Deviate from Baseline
 
-| Metric | Baseline | Avg (500) | Overhead | Interpretation |
+| Metric | Baseline | Avg (600) | Overhead | Interpretation |
 |--------|----------|-----------|----------|----------------|
-| Total Lines | 2 | 25.7 | +1,186% | Personality adds ~24 lines of overhead |
-| Total Characters | 30 | 646.4 | +2,055% | 22x more code to do the same thing |
-| Code Lines | 1 | 11.6 | +1,062% | |
-| Comment Lines | 0 | 7.8 | +7.8 | |
-| Comment Ratio | 0% | 53.9% | +53.9 | 54% of personality code is comments |
-| Complexity Score | 0 | 1.5 | +1.5 | Unnecessary complexity added for flavor |
-| Signal-to-Noise | 97% | 42.2% | -56% | Personality reduces useful code density |
-| Chars per Output | 30 | 443.4 | +1,378% | 14.8x overhead per unit of output |
-| Exclamation Marks | 1 | 3.2 | +216% | |
-| ALL CAPS Words | 0 | 3.1 | +3.1 | |
-| console.log Count | 1 | 2.2 | +124% | |
-| Vocabulary Richness | 100% | 69.3% | -31% | |
+| Total Lines | 2 | 32.4 | +1,518% | Personality adds ~30 lines of overhead |
+| Total Characters | 30 | 932.7 | +3,009% | 31x more code to do the same thing |
+| Code Lines | 1 | 18.0 | +1,697% | |
+| Comment Lines | 0 | 7.3 | +7.3 | |
+| Comment Ratio | 0% | 46.4% | +46.4 | 46% of personality code is comments |
+| Complexity Score | 0 | 1.8 | +1.8 | Unnecessary complexity added for flavor |
+| Signal-to-Noise | 97% | 49.9% | -49% | Personality reduces useful code density |
+| Chars per Output | 30 | 466.0 | +1,453% | 15.5x overhead per unit of output |
+| Exclamation Marks | 1 | 2.7 | +172% | |
+| ALL CAPS Words | 0 | 5.4 | +5.4 | |
+| console.log Count | 1 | 4.2 | +323% | |
+| Vocabulary Richness | 100% | 65.1% | -35% | |
 
 ## Development Fitness Scoring
 
@@ -108,6 +108,7 @@ console.log("Hello, World!");
 | Game of Thrones (301-310) | **65.5** | 10 |
 | Video Games (101-120, 361-400) | **64.8** | 60 |
 | Musicians (151-160, 261-280) | **64.0** | 30 |
+| **Professionals (501-600)** | **60.4** | **100** |
 | Historical (131-150, 281-300) | 58.1 | 40 |
 | Sports (241-250) | 57.8 | 10 |
 | Mythology (291-300) | 57.6 | 10 |
@@ -163,10 +164,10 @@ Trait comparison — Top 20 vs Bottom 20 personalities:
 
 ### The Ideal "Developer Personality" Profile
 
-- Writes **16 lines** (vs 26 average)
-- **25% comments** (vs 54% average)
-- Complexity **1.7** (vs 1.5 average)
-- **72% signal-to-noise** (vs 42% average)
+- Writes **16 lines** (vs 32 average)
+- **25% comments** (vs 46% average)
+- Complexity **1.7** (vs 1.8 average)
+- **72% signal-to-noise** (vs 50% average)
 - **Minimal emotional noise** — no screaming, no ALL CAPS
 - **Uses modern JS features** appropriately
 
@@ -179,3 +180,18 @@ Trait comparison — Top 20 vs Bottom 20 personalities:
 | Monica Geller | 34 | 23 | 92% | 3 | 13 |
 | Kevin Hart | 35 | 33 | 71% | 24 | 87 |
 | Elaine Benes | 36 | 25 | 92% | 7 | 8 |
+
+## Professionals vs Fictional — The Key Insight
+
+| Metric | Professionals (100) | Fictional (500) | Delta |
+|--------|---------------------|-----------------|-------|
+| Avg Lines | 65.6 | 25.7 | +39.9 |
+| Avg Characters | 2,364 | 646 | +1,718 |
+| Avg Code Lines | 49.7 | 11.6 | +38.1 |
+| Avg Comment Lines | 4.9 | 7.8 | -2.9 |
+| Comment % | 7% | 30% | -23% |
+| Code-to-Total % | 76% | 45% | +31% |
+| Avg Complexity | 3.4 | 1.5 | +1.9 |
+| Avg Exclamations | 0.5 | 3.2 | -2.7 |
+
+**Professionals don't write "Hello World" — they build systems.** A NASA Engineer builds a pre-flight checklist. A Forensic Accountant builds an audit trail with Benford's Law analysis. An Anesthesiologist builds a drug dosage calculator. They produce 2.5x more actual code, use 2.3x higher complexity, maintain 76% signal-to-noise, and generate almost zero emotional noise. The fitness scoring penalizes their verbosity, but their code is the most *functional* — they're the only category that consistently solves a real domain problem instead of performing a character.

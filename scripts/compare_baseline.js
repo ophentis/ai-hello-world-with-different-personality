@@ -272,6 +272,7 @@ const categories = {
   'LOTR Extended (441-450)': personalities.filter(r => parseInt(r.num) >= 441 && parseInt(r.num) <= 450),
   'Star Wars (311-326,489-500)': personalities.filter(r => (parseInt(r.num) >= 311 && parseInt(r.num) <= 326) || (parseInt(r.num) >= 489 && parseInt(r.num) <= 500)),
   'Mythology (291-300)': personalities.filter(r => parseInt(r.num) >= 291 && parseInt(r.num) <= 300),
+  'Professionals (501-600)': personalities.filter(r => parseInt(r.num) >= 501 && parseInt(r.num) <= 600),
 };
 
 const catScores = Object.entries(categories)

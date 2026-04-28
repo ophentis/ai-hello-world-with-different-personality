@@ -1,16 +1,17 @@
 # AI Hello World with Different Personalities
 
-An experiment: what happens when you ask an AI to write "Hello World" in JavaScript as 500 different fictional, historical, and celebrity personalities?
+An experiment: what happens when you ask an AI to write "Hello World" in JavaScript as 600 different personalities — fictional characters, historical figures, celebrities, and real-world professionals?
 
 ## The Experiment
 
-500 personalities — from anime characters to scientists, villains to children's TV icons, Greek gods to sitcom characters — each "wrote" a Hello World JS program. Every file is valid Node.js. The analysis script compares them statistically.
+600 personalities — from anime characters to NASA engineers, villains to bomb disposal technicians, Greek gods to forensic accountants — each "wrote" a Hello World JS program. Every file is valid Node.js. The analysis scripts compare them statistically.
 
 ## Project Structure
 
 ```
-personalities/           # 500 Hello World programs + 1 baseline
+personalities/           # 600 Hello World programs + 1 baseline
   000_baseline.js        # No-personality baseline
+  professionals/         # 100 files (NASA Engineer, Brain Surgeon, ...)
   anime/                 # 60 files (Naruto, Goku, Saitama, ...)
   action-film/           # 20 files (Jackie Chan, John Wick, ...)
   artists/               # 6 files (Frida Kahlo, Picasso, ...)
@@ -59,35 +60,59 @@ node scripts/compare_baseline.js
 
 ## Key Findings
 
-- **All 500 files are valid Node.js** — 500/500 produce output
-- Code length ranges from **7 lines** (Saitama, Kurt Cobain, Gandalf the White) to **57 lines** (Rocket Raccoon)
-- Character count ranges from **106** (Hodor) to **1,521** (Rocket Raccoon)
-- Complexity score ranges from **0** (Saitama, Hemingway, Iron Man, Joker) to **7** (Ethan Hunt, Aloy)
+- **All 601 files are valid Node.js** — 601/601 produce output
+- Code length ranges from **2 lines** (Baseline) to **115 lines** (Forensic Accountant)
+- Character count ranges from **30** (Baseline) to **5,649** (Forensic Accountant)
+- Complexity score ranges from **0** (Saitama, Hemingway, Iron Man) to **8** (Machine Learning Engineer)
+
+### Professionals vs Fictional — The Big Reveal
+
+| Metric | Professionals (100) | Fictional (500) | Delta |
+|--------|---------------------|-----------------|-------|
+| Avg Lines | 65.6 | 25.7 | +39.9 |
+| Avg Characters | 2,364 | 646 | +1,718 |
+| Avg Code Lines | 49.7 | 11.6 | +38.1 |
+| Comment % | 7% | 30% | -23% |
+| Code-to-Total % | 76% | 45% | +31% |
+| Avg Complexity | 3.4 | 1.5 | +1.9 |
+| Avg Exclamations | 0.5 | 3.2 | -2.7 |
+
+**Professionals don't write "Hello World" — they build systems.** A NASA Engineer builds a pre-flight checklist. A Forensic Accountant builds an audit trail with Benford's Law. An Anesthesiologist builds a drug dosage calculator. They write 2.5x more code, but 76% of it is functional (vs 45% for fictional characters).
 
 ### Most "Different" Personalities (by composite z-score)
 
 | Rank | Personality | Z-Score | Why |
 |------|------------|---------|-----|
-| 1 | Dalek | 22.57 | 84 ALL-CAPS words, 25 exclamation marks — "EXTERMINATE" style |
-| 2 | Kevin Hart | 20.16 | 87 ALL-CAPS words, 24 exclamations — screaming energy |
-| 3 | Megumin (Konosuba) | 18.19 | 14 console.logs, low comments — EXPLOSION chanting |
-| 4 | Donkey (Shrek) | 14.60 | Never shuts up — caps, exclamations, low vocab diversity |
-| 5 | Aqua (Konosuba) | 13.50 | 11 console.logs, high complexity — useless goddess crying |
+| 1 | Forensic Accountant | 26.52 | 115 lines, 5,649 chars, 45 console.logs — full audit trail |
+| 2 | Emergency Room Doctor | 22.81 | 58 ALL-CAPS (STAT orders), complex triage system |
+| 3 | Anesthesiologist | 22.54 | 100 lines, 42 console.logs — complete drug protocol |
+| 4 | Bomb Disposal Technician | 22.48 | 63 ALL-CAPS (safety warnings), wire-by-wire procedures |
+| 5 | Air Crash Investigator | 21.47 | 46 console.logs — full NTSB-style investigation report |
+| 6 | Machine Learning Engineer | 19.71 | Highest complexity (8), full training loop simulation |
+| 7 | Tax Accountant | 18.47 | 97 lines of ledger entries and bracket calculations |
+| 8 | Plasma Physicist | 17.78 | 103 lines of tokamak diagnostics and fusion conditions |
+| 9 | Dalek | 17.33 | 84 ALL-CAPS, 25 exclamations — "EXTERMINATE" |
+| 10 | Kevin Hart | 15.96 | 87 ALL-CAPS, 24 exclamations — screaming energy |
 
 ### Category Averages
 
 | Category | Avg Lines | Avg Chars | Complexity | Exclamations | Comment % |
 |----------|-----------|-----------|------------|-------------|-----------|
+| **Professionals** | **65.6** | **2,364** | **5.2** | **0.5** | **9%** |
 | Villains | 42.0 | 836 | 3.0 | 12.5 | 52% |
 | Scientists/Thinkers | 35.8 | 1,086 | 3.2 | 1.6 | 64% |
 | Video Game Characters | 33.1 | 692 | 2.9 | 3.0 | 39% |
 | Tech CEOs | 30.6 | 878 | 2.6 | 1.4 | 69% |
-| Anime | 23.9 | 592 | 2.1 | 6.7 | 62% |
+| Anime | 22.9 | 565 | 2.0 | 6.4 | 59% |
 | Superheroes | 19.4 | 540 | 1.3 | 3.2 | 74% |
 | Children's Characters | 19.1 | 562 | 0.7 | 5.1 | 85% |
 | Literary Authors | 17.4 | 543 | 1.0 | 2.0 | 77% |
 
-## Personalities (500)
+## Professionals (501-600)
+
+NASA Engineer, Nuclear Scientist, Brain Surgeon, Aerospace Engineer, Cryptographer, Compiler Engineer, Submarine Captain, Air Traffic Controller, Forensic Scientist, Structural Engineer, Database Administrator, Embedded Systems Engineer, Rocket Propulsion Engineer, Cybersecurity Analyst, Mechanical Engineer, Civil Engineer, Chemical Engineer, Biomedical Engineer, Data Scientist, Machine Learning Engineer, DevOps Engineer, Site Reliability Engineer, Kernel Developer, Robotics Engineer, Quantum Computing Researcher, Penetration Tester, Flight Test Engineer, Marine Biologist, Geologist, Meteorologist, Epidemiologist, Pharmacologist, Patent Attorney, Tax Accountant, Actuary, Air Crash Investigator, Bomb Disposal Technician, Emergency Room Doctor, Anesthesiologist, Forensic Accountant, Supply Chain Manager, Quality Assurance Engineer, Technical Writer, UX Researcher, Scrum Master, Product Manager, Solutions Architect, Network Engineer, FPGA Engineer, Signal Processing Engineer, Control Systems Engineer, Power Grid Operator, Nuclear Reactor Operator, Oil Rig Engineer, Mining Engineer, Environmental Engineer, Traffic Engineer, Sound Engineer, Broadcast Engineer, Optical Engineer, Materials Scientist, Nanotechnology Researcher, Bioinformatics Scientist, Climate Scientist, Seismologist, Volcanologist, Oceanographer, Astrophysicist, Particle Physicist, Plasma Physicist, Statistician, Economist, Quant Trader, Blockchain Developer, Game Engine Developer, Graphics Programmer, Operating System Developer, Firmware Engineer, Satellite Engineer, Avionics Engineer, Ship Engineer, Locomotive Engineer, Elevator Inspector, Building Code Inspector, Fire Protection Engineer, Forensic Engineer, Reliability Engineer, Safety Engineer, Industrial Engineer, Agricultural Engineer, Food Scientist, Textile Engineer, Packaging Engineer, Acoustics Engineer, Photonics Engineer, Cryogenics Engineer, Geotechnical Engineer, Hydrology Engineer, Corrosion Engineer, Chief Technology Officer
+
+## Fictional Personalities (500)
 
 ### Anime (001-040, 201-240)
 Naruto, Goku, Sasuke, Light Yagami, L, Luffy, Lelouch, Edward Elric, Spike Spiegel, Levi Ackerman, Gon, Killua, Saitama, Eren Jaeger, Rem, Sailor Moon, Pikachu, Vegeta, Itachi, Tanjiro, Zoro, Sanji, Genos, Todoroki, All Might, Deku, Kakashi, Jiraiya, Hinata, Mikasa, Zenitsu, Inosuke, Saber, Gintoki, Mob, Aang, Zuko, Iroh, Toph, Sokka, Mewtwo, Ash Ketchum, Ryuk, Griffith, Guts, Jotaro Kujo, Dio Brando, Shinji Ikari, Asuka, Rei Ayanami, Shigaraki, Dabi, Nezuko, Reigen, Hisoka, Kurapika, Senku, Kazuma, Aqua, Megumin
@@ -148,4 +173,4 @@ Wednesday Addams, Morticia Addams, Willy Wonka, Cat in the Hat, The Lorax, Winni
 
 ## Generated by
 
-Claude (Anthropic) via Claude Code — 50+ parallel subagents, each handling 10-20 personalities.
+Claude (Anthropic) via Claude Code — 60+ parallel subagents, each handling 10-20 personalities.

@@ -1,35 +1,35 @@
 # Hello World Personality Experiment — Statistical Analysis
 
-**Total files analyzed:** 501 (500 personalities + 1 baseline)
+**Total files analyzed:** 601 (500 fictional personalities + 100 professionals + 1 baseline)
 
 ## Overall Statistics
 
 | Metric | Mean | Median | StdDev | Min | Max |
 |--------|------|--------|--------|-----|-----|
-| Total Lines | 25.7 | 25.0 | 9.0 | 2 | 57 |
-| Non-Empty Lines | 19.4 | 18.0 | 7.3 | 1 | 44 |
-| Comment Lines | 7.8 | 7.0 | 4.1 | 0 | 23 |
-| Code Lines | 11.6 | 10.0 | 7.6 | 1 | 33 |
-| Total Characters | 645.2 | 626.0 | 226.5 | 30 | 1521 |
-| Comment Ratio (%) | 53.8 | 58.0 | 24.7 | 0 | 93 |
-| Vocabulary Richness (%) | 69.3 | 69.0 | 9.0 | 32 | 100 |
-| Avg Line Length | 33.0 | 32.0 | 7.3 | 14 | 60 |
-| Console.log Count | 2.2 | 1.0 | 2.1 | 0 | 14 |
-| Complexity Score (0-12) | 2.1 | 2.0 | 1.3 | 0 | 7 |
-| Exclamation Marks | 3.2 | 1.0 | 3.8 | 0 | 27 |
-| ALL CAPS Words | 3.1 | 0.0 | 7.5 | 0 | 87 |
+| Total Lines | 32.3 | 28.0 | 18.3 | 2 | 115 |
+| Non-Empty Lines | 25.2 | 20.0 | 15.8 | 1 | 93 |
+| Comment Lines | 7.3 | 7.0 | 4.1 | 0 | 23 |
+| Code Lines | 17.9 | 12.0 | 16.8 | 1 | 83 |
+| Total Characters | 931.2 | 685.0 | 742.4 | 30 | 5,649 |
+| Comment Ratio (%) | 46.4 | 48.0 | 28.1 | 0 | 93 |
+| Vocabulary Richness (%) | 65.1 | 67.0 | 12.9 | 30 | 100 |
+| Avg Line Length | 34.5 | 33.0 | 7.9 | 14 | 60 |
+| Console.log Count | 4.2 | 1.0 | 6.5 | 0 | 46 |
+| Complexity Score (0-12) | 2.7 | 2.0 | 1.6 | 0 | 8 |
+| Exclamation Marks | 2.7 | 1.0 | 3.6 | 0 | 27 |
+| ALL CAPS Words | 5.4 | 1.0 | 10.0 | 0 | 87 |
 
-## Feature Usage (out of 501 files)
+## Feature Usage (out of 601 files)
 
 | Feature | Count | % |
 |---------|-------|---|
-| `function` keyword | 251 | 50% |
-| Loops (`for`/`while`) | 137 | 27% |
-| Conditionals (`if`/`switch`) | 102 | 20% |
-| Arrow functions (`=>`) | 100 | 20% |
-| `class` | 84 | 17% |
-| Template literals | 42 | 8% |
-| `try`/`catch` | 8 | 2% |
+| `function` keyword | 288 | 48% |
+| Loops (`for`/`while`) | 195 | 32% |
+| Arrow functions (`=>`) | 159 | 26% |
+| `class` | 142 | 24% |
+| Template literals | 140 | 23% |
+| Conditionals (`if`/`switch`) | 132 | 22% |
+| `try`/`catch` | 8 | 1% |
 | `async`/`await` | 4 | 1% |
 
 ## Most Extreme Personalities
@@ -48,11 +48,11 @@
 
 | Rank | Personality | Lines |
 |------|------------|-------|
-| 1 | Rocket Raccoon | 57 |
-| 2 | Dr. Strange | 54 |
-| 3 | Thanos | 52 |
-| 4 | Black Panther | 52 |
-| 5 | Elsa | 47 |
+| 1 | Forensic Accountant | 115 |
+| 2 | Plasma Physicist | 103 |
+| 3 | Anesthesiologist | 100 |
+| 4 | Tax Accountant | 97 |
+| 5 | Optical Engineer | 96 |
 
 ### Most Comments (highest comment ratio)
 
@@ -69,20 +69,20 @@
 | Rank | Personality | Ratio |
 |------|------------|-------|
 | 1 | Baseline | 0% |
-| 2 | Megumin (Konosuba) | 5% |
-| 3 | Claptrap | 5% |
-| 4 | Tom Nook | 5% |
-| 5 | Kazuya | 5% |
+| 2 | Blockchain Developer | 4% |
+| 3 | Firmware Engineer | 4% |
+| 4 | Industrial Engineer | 4% |
+| 5 | Agricultural Engineer | 4% |
 
 ### Most Complex (highest complexity score)
 
 | Rank | Personality | Score |
 |------|------------|-------|
-| 1 | Ethan Hunt | 7 |
-| 2 | Aloy | 7 |
-| 3 | Nathan Drake | 6 |
-| 4 | Walter White | 5 |
-| 5 | Arthur Morgan | 5 |
+| 1 | Machine Learning Engineer | 8 |
+| 2 | Ethan Hunt | 7 |
+| 3 | Aloy | 7 |
+| 4 | NASA Engineer | 7 |
+| 5 | Quantum Computing Researcher | 7 |
 
 ### Simplest (lowest complexity score)
 
@@ -98,11 +98,11 @@
 
 | Rank | Personality | Chars |
 |------|------------|-------|
-| 1 | Rocket Raccoon | 1,521 |
-| 2 | Dr. Strange | 1,418 |
-| 3 | Sigmund Freud | 1,262 |
-| 4 | Hermione | 1,246 |
-| 5 | Ada Lovelace | 1,240 |
+| 1 | Forensic Accountant | 5,649 |
+| 2 | Anesthesiologist | 4,427 |
+| 3 | Air Crash Investigator | 4,239 |
+| 4 | Emergency Room Doctor | 3,891 |
+| 5 | Bomb Disposal Technician | 3,863 |
 
 ### Most Concise (fewest characters)
 
@@ -130,19 +130,19 @@
 |------|------------|-------|
 | 1 | Kevin Hart | 87 |
 | 2 | Dalek | 84 |
-| 3 | Eren Jaeger | 43 |
-| 4 | Donkey (Shrek) | 32 |
-| 5 | Achilles | 32 |
+| 3 | Bomb Disposal Technician | 63 |
+| 4 | Emergency Room Doctor | 58 |
+| 5 | Forensic Accountant | 45 |
 
 ### Most `console.log` Calls
 
 | Rank | Personality | Count |
 |------|------------|-------|
-| 1 | Megumin (Konosuba) | 14 |
-| 2 | Aqua (Konosuba) | 11 |
-| 3 | Garrus Vakarian | 11 |
-| 4 | Tali'Zorah | 11 |
-| 5 | Wrex | 11 |
+| 1 | Air Crash Investigator | 46 |
+| 2 | Forensic Accountant | 45 |
+| 3 | Anesthesiologist | 42 |
+| 4 | Bomb Disposal Technician | 38 |
+| 5 | Emergency Room Doctor | 38 |
 
 ### Richest Vocabulary
 
@@ -160,57 +160,73 @@
 
 | Rank | Personality | Z-Score | Key Deviations |
 |------|------------|---------|----------------|
-| 1 | Dalek | 22.56 | totalLines ↑2.0, exclamations ↑5.7, allCapsWords ↑10.7 |
-| 2 | Kevin Hart | 20.17 | exclamations ↑5.4, allCapsWords ↑11.1 |
-| 3 | Megumin (Konosuba) | 18.16 | totalLines ↑1.6, commentRatio ↓2.0, totalChars ↑2.4, consoleLogCount ↑5.7 |
-| 4 | Donkey (Shrek) | 14.58 | complexityScore ↓1.7, exclamations ↑4.9, allCapsWords ↑3.8 |
-| 5 | Baseline | 14.20 | totalLines ↓2.6, commentRatio ↓2.2, totalChars ↓2.7, vocabularyRichness ↑3.4 |
-| 6 | Aqua (Konosuba) | 13.48 | commentRatio ↓1.8, complexityScore ↑2.3, consoleLogCount ↑4.2 |
-| 7 | Senku Ishigami | 13.14 | totalLines ↑1.9, commentRatio ↓1.8, allCapsWords ↑1.9 |
-| 8 | Rocket Raccoon | 12.91 | totalLines ↑3.5, totalChars ↑3.9 |
-| 9 | SpongeBob | 12.41 | exclamations ↑4.1, allCapsWords ↑3.2, vocabularyRichness ↓2.8 |
-| 10 | Handsome Jack | 12.36 | commentRatio ↓1.6, totalChars ↑1.9, consoleLogCount ↑4.2 |
-| 11 | Mordin Solus | 12.21 | commentRatio ↓1.7, totalChars ↑2.1, consoleLogCount ↑4.2 |
-| 12 | Aloy | 11.80 | complexityScore ↑3.9, consoleLogCount ↑2.8 |
-| 13 | Marie Curie | 11.72 | totalLines ↑2.0, totalChars ↑2.3, exclamations ↑2.1 |
-| 14 | Garrus Vakarian | 11.58 | consoleLogCount ↑4.2 |
-| 15 | Nathan Drake | 11.55 | commentRatio ↓1.7, complexityScore ↑3.1, consoleLogCount ↑2.8 |
-| 16 | Jar Jar Binks | 11.52 | exclamations ↑2.8, consoleLogCount ↑3.3 |
-| 17 | Kurapika | 11.45 | totalLines ↑1.8, complexityScore ↑2.3, consoleLogCount ↑2.3 |
-| 18 | Kazuma Satou | 11.39 | totalLines ↑1.8, complexityScore ↑2.3, consoleLogCount ↑2.3 |
-| 19 | Wrex | 11.34 | commentRatio ↓1.6, consoleLogCount ↑4.2 |
-| 20 | Genie (Aladdin) | 11.28 | totalChars ↑1.6, exclamations ↑3.1, allCapsWords ↑2.1 |
+| 1 | Forensic Accountant | 26.52 | totalLines +4.5, totalChars +6.4, allCapsWords +4.0, consoleLogCount +6.3 |
+| 2 | Emergency Room Doctor | 22.81 | totalLines +3.0, complexityScore +2.0, totalChars +4.0, allCapsWords +5.3 |
+| 3 | Anesthesiologist | 22.54 | totalLines +3.7, totalChars +4.7, consoleLogCount +5.8 |
+| 4 | Bomb Disposal Technician | 22.48 | totalChars +3.9, allCapsWords +5.8, consoleLogCount +5.2 |
+| 5 | Air Crash Investigator | 21.47 | totalChars +4.5, consoleLogCount +6.4 |
+| 6 | Machine Learning Engineer | 19.71 | totalLines +3.4, complexityScore +3.2, consoleLogCount +3.8 |
+| 7 | Tax Accountant | 18.47 | totalLines +3.5, totalChars +3.5, consoleLogCount +5.1 |
+| 8 | Plasma Physicist | 17.78 | totalLines +3.9, complexityScore +2.6, totalChars +3.9 |
+| 9 | Dalek | 17.33 | exclamations +6.1, allCapsWords +7.9 |
+| 10 | Signal Processing Engineer | 16.47 | totalChars +2.8, consoleLogCount +3.5 |
+| 11 | Biomedical Engineer | 16.40 | complexityScore +2.0, totalChars +3.0, allCapsWords +2.6 |
+| 12 | Data Scientist | 16.37 | totalLines +3.2, totalChars +3.4, consoleLogCount +3.5 |
+| 13 | Kevin Hart | 15.96 | exclamations +5.8, allCapsWords +8.2 |
+| 14 | FPGA Engineer | 15.90 | complexityScore +2.0, consoleLogCount +3.5 |
+| 15 | Bioinformatics Scientist | 15.81 | complexityScore +2.6, allCapsWords +3.3 |
+| 16 | Patent Attorney | 15.47 | totalChars +2.5, consoleLogCount +3.7 |
+| 17 | Chief Technology Officer | 14.87 | totalChars +3.1, consoleLogCount +2.7 |
+| 18 | Particle Physicist | 14.86 | totalLines +3.3, totalChars +3.0 |
+| 19 | Astrophysicist | 14.85 | totalLines +3.0, totalChars +3.3 |
+| 20 | Optical Engineer | 14.64 | totalLines +3.5, totalChars +3.2 |
 
 ### Bottom 5 Most "Standard" Personalities
 
 | Rank | Personality | Z-Score |
 |------|------------|---------|
-| 1 | Bruce Lee | 2.23 |
-| 2 | Jackie Chan | 2.28 |
-| 3 | Christopher Nolan | 2.33 |
-| 4 | Bugs Bunny | 2.36 |
-| 5 | Stanley Kubrick | 2.42 |
+| 1 | Toph | 1.66 |
+| 2 | Muhammad Ali | 1.83 |
+| 3 | Serena Williams | 1.91 |
+| 4 | R2-D2 | 1.98 |
+| 5 | Dwight Schrute | 2.00 |
 
 ## Category Comparison
 
 | Category | Avg Lines | Avg Chars | Avg Complexity | Avg ! | Avg Comment % |
 |----------|-----------|-----------|----------------|-------|---------------|
+| **Professionals** | **65.6** | **2,364** | **5.2** | **0.5** | **9%** |
 | Scientists/Thinkers | 35.8 | 1,086 | 3.2 | 1.6 | 64% |
 | Villains | 42.0 | 836 | 3.0 | 12.5 | 52% |
 | Video Game Characters | 33.1 | 692 | 2.9 | 3.0 | 39% |
 | Historical Figures | 32.8 | 798 | 2.8 | 4.2 | 50% |
 | Tech CEOs | 30.6 | 878 | 2.6 | 1.4 | 69% |
 | AIs/Robots | 31.0 | 723 | 2.2 | 1.7 | 57% |
-| Musicians | 29.3 | 638 | 2.2 | 2.0 | 34% |
-| Celebrities | 27.8 | 769 | 2.2 | 4.2 | 84% |
-| Action Heroes | 29.1 | 683 | 2.3 | 2.7 | 55% |
 | Sitcom Characters | 27.1 | 724 | 2.3 | 4.6 | 61% |
+| Action Heroes | 29.1 | 683 | 2.3 | 2.7 | 55% |
+| Celebrities | 27.8 | 769 | 2.2 | 4.2 | 84% |
+| Musicians | 29.3 | 638 | 2.2 | 2.0 | 34% |
 | Anime | 22.9 | 565 | 2.0 | 6.4 | 59% |
 | Superheroes | 19.4 | 540 | 1.3 | 3.2 | 74% |
 | Children's Characters | 19.1 | 562 | 0.7 | 5.1 | 85% |
 | Literary Authors | 17.4 | 543 | 1.0 | 2.0 | 77% |
 
+## Professionals vs Fictional — Head-to-Head
+
+| Metric | Professionals (100) | Fictional (500) | Delta |
+|--------|---------------------|-----------------|-------|
+| Avg Lines | 65.6 | 25.7 | +39.9 |
+| Avg Characters | 2,364 | 646 | +1,718 |
+| Avg Code Lines | 49.7 | 11.6 | +38.1 |
+| Avg Comment Lines | 4.9 | 7.8 | -2.9 |
+| Comment % | 7% | 30% | -23% |
+| Code-to-Total % | 76% | 45% | +31% |
+| Avg Complexity | 3.4 | 1.5 | +1.9 |
+| Avg Exclamations | 0.5 | 3.2 | -2.7 |
+
+**Key insight:** Professionals write **2.5x more code lines**, use **2.3x higher complexity**, but produce **76% useful code** vs 45% for fictional personalities. They also use **almost no comments** (7% vs 30%) and **zero emotional noise** (0.5 exclamations vs 3.2). Professional personalities treat Hello World as a domain simulation, not a character performance.
+
 ## Runtime Validity Check
 
-**Passed (produced output): 501/501**
-**Failed: 0/501**
+**Passed (produced output): 601/601**
+**Failed: 0/601**
