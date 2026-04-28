@@ -237,7 +237,8 @@ const categories = {
   'Action Heroes': results.filter(r => parseInt(r.num) >= 161 && parseInt(r.num) <= 170),
   'AIs/Robots': results.filter(r => [111,112,167,183,184,185,79].map(String).includes(r.num)),
   'Childrens Characters': results.filter(r => parseInt(r.num) >= 194 && parseInt(r.num) <= 200),
-  'Professionals': results.filter(r => parseInt(r.num) >= 501 && parseInt(r.num) <= 600),
+  'Professionals': results.filter(r => parseInt(r.num) >= 501 && parseInt(r.num) <= 601),
+  'Software Engineers': results.filter(r => parseInt(r.num) >= 602 && parseInt(r.num) <= 651),
 };
 
 console.log(String('Category').padEnd(24) + String('AvgLines').padStart(9) + String('AvgChars').padStart(9) + String('AvgCmplx').padStart(9) + String('Avg!').padStart(6) + String('AvgCmt%').padStart(8));

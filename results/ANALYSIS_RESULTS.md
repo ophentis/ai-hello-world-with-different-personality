@@ -1,36 +1,36 @@
 # Hello World Personality Experiment — Statistical Analysis
 
-**Total files analyzed:** 601 (500 fictional personalities + 100 professionals + 1 baseline)
+**Total files analyzed:** 652 (500 fictional personalities + 101 professionals + 50 software engineer archetypes + 1 baseline)
 
 ## Overall Statistics
 
 | Metric | Mean | Median | StdDev | Min | Max |
 |--------|------|--------|--------|-----|-----|
-| Total Lines | 32.3 | 28.0 | 18.3 | 2 | 115 |
-| Non-Empty Lines | 25.2 | 20.0 | 15.8 | 1 | 93 |
-| Comment Lines | 7.3 | 7.0 | 4.1 | 0 | 23 |
-| Code Lines | 17.9 | 12.0 | 16.8 | 1 | 83 |
-| Total Characters | 931.2 | 685.0 | 742.4 | 30 | 5,649 |
-| Comment Ratio (%) | 46.4 | 48.0 | 28.1 | 0 | 93 |
-| Vocabulary Richness (%) | 65.1 | 67.0 | 12.9 | 30 | 100 |
-| Avg Line Length | 34.5 | 33.0 | 7.9 | 14 | 60 |
-| Console.log Count | 4.2 | 1.0 | 6.5 | 0 | 46 |
-| Complexity Score (0-12) | 2.7 | 2.0 | 1.6 | 0 | 8 |
-| Exclamation Marks | 2.7 | 1.0 | 3.6 | 0 | 27 |
-| ALL CAPS Words | 5.4 | 1.0 | 10.0 | 0 | 87 |
+| Total Lines | 33.4 | 28.0 | 20.1 | 2 | 148 |
+| Non-Empty Lines | 26.2 | 21.0 | 17.4 | 1 | 124 |
+| Comment Lines | 7.5 | 7.0 | 4.8 | 0 | 38 |
+| Code Lines | 18.7 | 13.0 | 17.9 | 1 | 113 |
+| Total Characters | 950.4 | 696.5 | 755.8 | 28 | 5,649 |
+| Comment Ratio (%) | 45.5 | 47.0 | 28.6 | 0 | 93 |
+| Vocabulary Richness (%) | 64.5 | 66.0 | 13.4 | 27 | 100 |
+| Avg Line Length | 34.3 | 33.0 | 8.0 | 14 | 60 |
+| Console.log Count | 4.1 | 1.0 | 6.4 | 0 | 46 |
+| Complexity Score (0-12) | 2.7 | 2.0 | 1.7 | 0 | 8 |
+| Exclamation Marks | 2.6 | 1.0 | 3.6 | 0 | 27 |
+| ALL CAPS Words | 5.6 | 1.0 | 10.3 | 0 | 87 |
 
-## Feature Usage (out of 601 files)
+## Feature Usage (out of 652 files)
 
 | Feature | Count | % |
 |---------|-------|---|
-| `function` keyword | 288 | 48% |
-| Loops (`for`/`while`) | 195 | 32% |
-| Arrow functions (`=>`) | 159 | 26% |
-| `class` | 142 | 24% |
-| Template literals | 140 | 23% |
-| Conditionals (`if`/`switch`) | 132 | 22% |
-| `try`/`catch` | 8 | 1% |
-| `async`/`await` | 4 | 1% |
+| `function` keyword | 314 | 48% |
+| Loops (`for`/`while`) | 218 | 33% |
+| Arrow functions (`=>`) | 182 | 28% |
+| Template literals | 156 | 24% |
+| `class` | 155 | 24% |
+| Conditionals (`if`/`switch`) | 152 | 23% |
+| `try`/`catch` | 15 | 2% |
+| `async`/`await` | 5 | 1% |
 
 ## Most Extreme Personalities
 
@@ -39,20 +39,20 @@
 | Rank | Personality | Lines |
 |------|------------|-------|
 | 1 | Baseline | 2 |
-| 2 | Saitama | 7 |
-| 3 | Kurt Cobain | 7 |
-| 4 | Gandalf the White | 7 |
-| 5 | Hodor | 10 |
+| 2 | Code Golfer | 2 |
+| 3 | Pragmatic Developer | 2 |
+| 4 | 10x Developer | 3 |
+| 5 | Saitama | 7 |
 
 ### Longest (most lines)
 
 | Rank | Personality | Lines |
 |------|------------|-------|
-| 1 | Forensic Accountant | 115 |
-| 2 | Plasma Physicist | 103 |
-| 3 | Anesthesiologist | 100 |
-| 4 | Tax Accountant | 97 |
-| 5 | Optical Engineer | 96 |
+| 1 | Database Developer (SWE) | 148 |
+| 2 | Game Developer (SWE) | 138 |
+| 3 | Platform Engineer (SWE) | 130 |
+| 4 | Forensic Accountant | 115 |
+| 5 | Plasma Physicist | 103 |
 
 ### Most Comments (highest comment ratio)
 
@@ -69,20 +69,20 @@
 | Rank | Personality | Ratio |
 |------|------------|-------|
 | 1 | Baseline | 0% |
-| 2 | Blockchain Developer | 4% |
-| 3 | Firmware Engineer | 4% |
-| 4 | Industrial Engineer | 4% |
-| 5 | Agricultural Engineer | 4% |
+| 2 | Software Engineer | 0% |
+| 3 | Senior Engineer (SWE) | 0% |
+| 4 | 10x Developer | 0% |
+| 5 | Code Golfer | 0% |
 
 ### Most Complex (highest complexity score)
 
 | Rank | Personality | Score |
 |------|------------|-------|
 | 1 | Machine Learning Engineer | 8 |
-| 2 | Ethan Hunt | 7 |
-| 3 | Aloy | 7 |
-| 4 | NASA Engineer | 7 |
-| 5 | Quantum Computing Researcher | 7 |
+| 2 | Game Developer (SWE) | 8 |
+| 3 | Ethan Hunt | 7 |
+| 4 | Aloy | 7 |
+| 5 | NASA Engineer | 7 |
 
 ### Simplest (lowest complexity score)
 
@@ -108,11 +108,11 @@
 
 | Rank | Personality | Chars |
 |------|------------|-------|
-| 1 | Baseline | 30 |
-| 2 | Hodor | 106 |
-| 3 | Kurt Cobain | 112 |
-| 4 | Sasuke | 158 |
-| 5 | Saitama | 179 |
+| 1 | Pragmatic Developer | 28 |
+| 2 | Baseline | 30 |
+| 3 | 10x Developer | 58 |
+| 4 | Code Golfer | 58 |
+| 5 | Senior Engineer (SWE) | 88 |
 
 ### Most Exclamation Marks
 
@@ -149,10 +149,10 @@
 | Rank | Personality | Richness |
 |------|------------|----------|
 | 1 | Baseline | 100% |
-| 2 | Geralt of Rivia | 95% |
-| 3 | Kurt Cobain | 93% |
-| 4 | Boba Fett | 92% |
-| 5 | Lovecraft | 91% |
+| 2 | 10x Developer | 100% |
+| 3 | Pragmatic Developer | 100% |
+| 4 | Geralt of Rivia | 95% |
+| 5 | Kurt Cobain | 93% |
 
 ## Biggest Overall Deviations (composite z-score)
 
@@ -160,73 +160,75 @@
 
 | Rank | Personality | Z-Score | Key Deviations |
 |------|------------|---------|----------------|
-| 1 | Forensic Accountant | 26.52 | totalLines +4.5, totalChars +6.4, allCapsWords +4.0, consoleLogCount +6.3 |
-| 2 | Emergency Room Doctor | 22.81 | totalLines +3.0, complexityScore +2.0, totalChars +4.0, allCapsWords +5.3 |
-| 3 | Anesthesiologist | 22.54 | totalLines +3.7, totalChars +4.7, consoleLogCount +5.8 |
-| 4 | Bomb Disposal Technician | 22.48 | totalChars +3.9, allCapsWords +5.8, consoleLogCount +5.2 |
-| 5 | Air Crash Investigator | 21.47 | totalChars +4.5, consoleLogCount +6.4 |
-| 6 | Machine Learning Engineer | 19.71 | totalLines +3.4, complexityScore +3.2, consoleLogCount +3.8 |
-| 7 | Tax Accountant | 18.47 | totalLines +3.5, totalChars +3.5, consoleLogCount +5.1 |
-| 8 | Plasma Physicist | 17.78 | totalLines +3.9, complexityScore +2.6, totalChars +3.9 |
-| 9 | Dalek | 17.33 | exclamations +6.1, allCapsWords +7.9 |
-| 10 | Signal Processing Engineer | 16.47 | totalChars +2.8, consoleLogCount +3.5 |
-| 11 | Biomedical Engineer | 16.40 | complexityScore +2.0, totalChars +3.0, allCapsWords +2.6 |
-| 12 | Data Scientist | 16.37 | totalLines +3.2, totalChars +3.4, consoleLogCount +3.5 |
-| 13 | Kevin Hart | 15.96 | exclamations +5.8, allCapsWords +8.2 |
-| 14 | FPGA Engineer | 15.90 | complexityScore +2.0, consoleLogCount +3.5 |
-| 15 | Bioinformatics Scientist | 15.81 | complexityScore +2.6, allCapsWords +3.3 |
-| 16 | Patent Attorney | 15.47 | totalChars +2.5, consoleLogCount +3.7 |
-| 17 | Chief Technology Officer | 14.87 | totalChars +3.1, consoleLogCount +2.7 |
-| 18 | Particle Physicist | 14.86 | totalLines +3.3, totalChars +3.0 |
-| 19 | Astrophysicist | 14.85 | totalLines +3.0, totalChars +3.3 |
-| 20 | Optical Engineer | 14.64 | totalLines +3.5, totalChars +3.2 |
+| 1 | Database Developer (SWE) | 25.74 | totalLines +5.7, complexityScore +1.9, totalChars +4.2, allCapsWords +6.3, consoleLogCount +3.3 |
+| 2 | Forensic Accountant | 25.66 | totalLines +4.1, totalChars +6.2, allCapsWords +3.8, consoleLogCount +6.4 |
+| 3 | Emergency Room Doctor | 22.07 | totalLines +2.7, complexityScore +1.9, totalChars +3.9, allCapsWords +5.1, consoleLogCount +5.3 |
+| 4 | Anesthesiologist | 21.80 | totalLines +3.3, totalChars +4.6, allCapsWords +2.8, consoleLogCount +6.0 |
+| 5 | Bomb Disposal Technician | 21.77 | totalLines +2.2, totalChars +3.9, allCapsWords +5.6, consoleLogCount +5.3 |
+| 6 | Air Crash Investigator | 20.84 | totalLines +2.6, totalChars +4.4, allCapsWords +3.2, consoleLogCount +6.6 |
+| 7 | Platform Engineer (SWE) | 19.60 | totalLines +4.8, complexityScore +1.9, totalChars +3.4, allCapsWords +3.6 |
+| 8 | Machine Learning Engineer | 18.98 | totalLines +3.1, complexityScore +3.1, totalChars +3.3, consoleLogCount +3.9 |
+| 9 | Tax Accountant | 17.80 | totalLines +3.2, totalChars +3.4, consoleLogCount +5.2 |
+| 10 | Game Developer (SWE) | 17.31 | totalLines +5.2, complexityScore +3.1, totalChars +3.0 |
+| 11 | Dalek | 17.15 | exclamations +6.3, allCapsWords +7.6 |
+| 12 | Plasma Physicist | 17.03 | totalLines +3.5, complexityScore +2.5, totalChars +3.8, consoleLogCount +2.8 |
+| 13 | Kevin Hart | 15.95 | exclamations +6.0, allCapsWords +7.9 |
+| 14 | Signal Processing Engineer | 15.86 | totalLines +2.2, totalChars +2.7, consoleLogCount +3.6 |
+| 15 | Biomedical Engineer | 15.77 | totalLines +2.1, complexityScore +1.9, totalChars +3.0, allCapsWords +2.5 |
+| 16 | Data Scientist | 15.72 | totalLines +2.9, totalChars +3.3, consoleLogCount +3.6 |
+| 17 | FPGA Engineer | 15.32 | totalLines +2.0, complexityScore +1.9, totalChars +2.3, consoleLogCount +3.6 |
+| 18 | Bioinformatics Scientist | 15.17 | totalLines +1.8, complexityScore +2.5, totalChars +2.4, allCapsWords +3.1 |
+| 19 | Patent Attorney | 14.91 | totalLines +1.8, totalChars +2.4, allCapsWords +2.2, consoleLogCount +3.8 |
+| 20 | ML Engineer (SWE) | 14.76 | totalLines +3.4, complexityScore +1.9, totalChars +2.9 |
 
 ### Bottom 5 Most "Standard" Personalities
 
 | Rank | Personality | Z-Score |
 |------|------------|---------|
-| 1 | Toph | 1.66 |
-| 2 | Muhammad Ali | 1.83 |
-| 3 | Serena Williams | 1.91 |
-| 4 | R2-D2 | 1.98 |
-| 5 | Dwight Schrute | 2.00 |
+| 1 | Toph | 1.55 |
+| 2 | Dwight Schrute | 1.80 |
+| 3 | Muhammad Ali | 1.88 |
+| 4 | Neil deGrasse Tyson | 1.89 |
+| 5 | Serena Williams | 1.89 |
 
 ## Category Comparison
 
 | Category | Avg Lines | Avg Chars | Avg Complexity | Avg ! | Avg Comment % |
 |----------|-----------|-----------|----------------|-------|---------------|
-| **Professionals** | **65.6** | **2,364** | **5.2** | **0.5** | **9%** |
-| Scientists/Thinkers | 35.8 | 1,086 | 3.2 | 1.6 | 64% |
+| **Professionals** | **65.0** | **2,342** | **5.1** | **0.5** | **9%** |
+| **Software Engineers** | **46.4** | **1,198** | **3.7** | **1.2** | **36%** |
 | Villains | 42.0 | 836 | 3.0 | 12.5 | 52% |
+| Scientists/Thinkers | 35.8 | 1,086 | 3.2 | 1.6 | 64% |
 | Video Game Characters | 33.1 | 692 | 2.9 | 3.0 | 39% |
 | Historical Figures | 32.8 | 798 | 2.8 | 4.2 | 50% |
-| Tech CEOs | 30.6 | 878 | 2.6 | 1.4 | 69% |
 | AIs/Robots | 31.0 | 723 | 2.2 | 1.7 | 57% |
-| Sitcom Characters | 27.1 | 724 | 2.3 | 4.6 | 61% |
+| Tech CEOs | 30.6 | 878 | 2.6 | 1.4 | 69% |
+| Musicians | 29.3 | 638 | 2.2 | 2.0 | 34% |
 | Action Heroes | 29.1 | 683 | 2.3 | 2.7 | 55% |
 | Celebrities | 27.8 | 769 | 2.2 | 4.2 | 84% |
-| Musicians | 29.3 | 638 | 2.2 | 2.0 | 34% |
+| Sitcom Characters | 27.1 | 724 | 2.3 | 4.6 | 61% |
 | Anime | 22.9 | 565 | 2.0 | 6.4 | 59% |
 | Superheroes | 19.4 | 540 | 1.3 | 3.2 | 74% |
 | Children's Characters | 19.1 | 562 | 0.7 | 5.1 | 85% |
 | Literary Authors | 17.4 | 543 | 1.0 | 2.0 | 77% |
 
-## Professionals vs Fictional — Head-to-Head
+## Three-Way Comparison: Professionals vs SWE Archetypes vs Fictional
 
-| Metric | Professionals (100) | Fictional (500) | Delta |
-|--------|---------------------|-----------------|-------|
-| Avg Lines | 65.6 | 25.7 | +39.9 |
-| Avg Characters | 2,364 | 646 | +1,718 |
-| Avg Code Lines | 49.7 | 11.6 | +38.1 |
-| Avg Comment Lines | 4.9 | 7.8 | -2.9 |
-| Comment % | 7% | 30% | -23% |
-| Code-to-Total % | 76% | 45% | +31% |
-| Avg Complexity | 3.4 | 1.5 | +1.9 |
-| Avg Exclamations | 0.5 | 3.2 | -2.7 |
+| Metric | Professionals (101) | SWE Types (50) | Fictional (500) | Baseline |
+|--------|---------------------|----------------|-----------------|----------|
+| Avg Lines | 65.0 | 46.4 | 25.7 | 2 |
+| Avg Characters | 2,342 | 1,198 | 646 | 30 |
+| Avg Code Lines | 49.3 | 27.9 | 11.6 | 1 |
+| Comment % | 9.1% | 35.5% | 53.9% | 0% |
+| Complexity | 3.4 | 2.6 | 1.5 | 0 |
+| Signal-to-Noise | 88.1% | 60.5% | 42.2% | 97% |
+| Exclamations | 0.5 | 1.2 | 3.2 | 1 |
+| Modern JS Score | 3.8 | 2.9 | 2.3 | 1 |
+| Dev Fitness | 60.5 | 55.9 | 56.0 | N/A |
 
-**Key insight:** Professionals write **2.5x more code lines**, use **2.3x higher complexity**, but produce **76% useful code** vs 45% for fictional personalities. They also use **almost no comments** (7% vs 30%) and **zero emotional noise** (0.5 exclamations vs 3.2). Professional personalities treat Hello World as a domain simulation, not a character performance.
+**Key insight:** Professionals write **2.5x more code lines**, use **2.3x higher complexity**, but produce **88% signal-to-noise** vs 60% for SWE types and 42% for fictional personalities. SWE archetypes sit in between — more code than fictional but more comments than professionals. The fitness scoring penalizes professional verbosity, making SWE archetypes and fictional characters score similarly despite producing very different code. Process-oriented SWE types (pair programmers, agile devs) score worst of all categories.
 
 ## Runtime Validity Check
 
-**Passed (produced output): 601/601**
-**Failed: 0/601**
+**Passed (produced output): 652/652**
+**Failed: 0/652**

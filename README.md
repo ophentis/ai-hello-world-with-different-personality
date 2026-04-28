@@ -1,17 +1,18 @@
 # AI Hello World with Different Personalities
 
-An experiment: what happens when you ask an AI to write "Hello World" in JavaScript as 600 different personalities — fictional characters, historical figures, celebrities, and real-world professionals?
+An experiment: what happens when you ask an AI to write "Hello World" in JavaScript as 652 different personalities — fictional characters, historical figures, celebrities, real-world professionals, and software engineer archetypes?
 
 ## The Experiment
 
-600 personalities — from anime characters to NASA engineers, villains to bomb disposal technicians, Greek gods to forensic accountants — each "wrote" a Hello World JS program. Every file is valid Node.js. The analysis scripts compare them statistically.
+652 personalities — from anime characters to NASA engineers, villains to bomb disposal technicians, Greek gods to forensic accountants, 10x developers to pair programmers — each "wrote" a Hello World JS program. Every file is valid Node.js. The analysis scripts compare them statistically.
 
 ## Project Structure
 
 ```
-personalities/           # 600 Hello World programs + 1 baseline
+personalities/           # 651 Hello World programs + 1 baseline
   000_baseline.js        # No-personality baseline
-  professionals/         # 100 files (NASA Engineer, Brain Surgeon, ...)
+  professionals/         # 101 files (NASA Engineer, Brain Surgeon, ...)
+  software-engineers/    # 50 files (10x Developer, Senior Engineer, ...)
   anime/                 # 60 files (Naruto, Goku, Saitama, ...)
   action-film/           # 20 files (Jackie Chan, John Wick, ...)
   artists/               # 6 files (Frida Kahlo, Picasso, ...)
@@ -42,6 +43,7 @@ scripts/                 # Analysis scripts
 results/                 # Pre-generated analysis output
   ANALYSIS_RESULTS.md    # Full statistical report
   BASELINE_COMPARISON.md # Baseline comparison & recommendations
+  SOFTWARE_ENGINEERS.md  # 50 SWE archetype comparison & rankings
 data/                    # Personality lists
 ```
 
@@ -60,24 +62,25 @@ node scripts/compare_baseline.js
 
 ## Key Findings
 
-- **All 601 files are valid Node.js** — 601/601 produce output
-- Code length ranges from **2 lines** (Baseline) to **115 lines** (Forensic Accountant)
-- Character count ranges from **30** (Baseline) to **5,649** (Forensic Accountant)
-- Complexity score ranges from **0** (Saitama, Hemingway, Iron Man) to **8** (Machine Learning Engineer)
+- **All 652 files are valid Node.js** — 652/652 produce output
+- Code length ranges from **2 lines** (Baseline, Code Golfer, Pragmatic Developer) to **148 lines** (Database Developer)
+- Character count ranges from **28** (Pragmatic Developer) to **5,649** (Forensic Accountant)
+- Complexity score ranges from **0** (Saitama, Hemingway, Iron Man) to **8** (Machine Learning Engineer, Game Developer)
 
-### Professionals vs Fictional — The Big Reveal
+### Three-Way Comparison — Professionals vs SWE Types vs Fictional
 
-| Metric | Professionals (100) | Fictional (500) | Delta |
-|--------|---------------------|-----------------|-------|
-| Avg Lines | 65.6 | 25.7 | +39.9 |
-| Avg Characters | 2,364 | 646 | +1,718 |
-| Avg Code Lines | 49.7 | 11.6 | +38.1 |
-| Comment % | 7% | 30% | -23% |
-| Code-to-Total % | 76% | 45% | +31% |
-| Avg Complexity | 3.4 | 1.5 | +1.9 |
-| Avg Exclamations | 0.5 | 3.2 | -2.7 |
+| Metric | Professionals (101) | SWE Types (50) | Fictional (500) |
+|--------|---------------------|----------------|-----------------|
+| Avg Lines | 65.0 | 46.4 | 25.7 |
+| Avg Characters | 2,342 | 1,198 | 646 |
+| Signal-to-Noise | 88.1% | 60.5% | 42.2% |
+| Comment % | 9.1% | 35.5% | 53.9% |
+| Complexity | 3.4 | 2.6 | 1.5 |
+| Exclamations | 0.5 | 1.2 | 3.2 |
 
-**Professionals don't write "Hello World" — they build systems.** A NASA Engineer builds a pre-flight checklist. A Forensic Accountant builds an audit trail with Benford's Law. An Anesthesiologist builds a drug dosage calculator. They write 2.5x more code, but 76% of it is functional (vs 45% for fictional characters).
+**Professionals don't write "Hello World" — they build systems.** A NASA Engineer builds a pre-flight checklist. A Forensic Accountant builds an audit trail with Benford's Law. They write 2.5x more code, but 88% of it is signal (vs 60% for SWE types and 42% for fictional characters).
+
+**SWE archetypes reveal the seniority U-curve.** The 10x Developer (score 79) and Senior Engineer (72) are the most efficient. But as seniority increases past senior, code gets *more verbose* — principals (53) and architects (43) add architectural commentary. Process-oriented types (Pair Programmer 37, Documentation Obsessed 38) produce the least useful code of any category.
 
 ### Most "Different" Personalities (by composite z-score)
 
@@ -98,7 +101,8 @@ node scripts/compare_baseline.js
 
 | Category | Avg Lines | Avg Chars | Complexity | Exclamations | Comment % |
 |----------|-----------|-----------|------------|-------------|-----------|
-| **Professionals** | **65.6** | **2,364** | **5.2** | **0.5** | **9%** |
+| **Professionals** | **65.0** | **2,342** | **5.1** | **0.5** | **9%** |
+| **Software Engineers** | **46.4** | **1,198** | **3.7** | **1.2** | **36%** |
 | Villains | 42.0 | 836 | 3.0 | 12.5 | 52% |
 | Scientists/Thinkers | 35.8 | 1,086 | 3.2 | 1.6 | 64% |
 | Video Game Characters | 33.1 | 692 | 2.9 | 3.0 | 39% |
@@ -111,6 +115,10 @@ node scripts/compare_baseline.js
 ## Professionals (501-600)
 
 NASA Engineer, Nuclear Scientist, Brain Surgeon, Aerospace Engineer, Cryptographer, Compiler Engineer, Submarine Captain, Air Traffic Controller, Forensic Scientist, Structural Engineer, Database Administrator, Embedded Systems Engineer, Rocket Propulsion Engineer, Cybersecurity Analyst, Mechanical Engineer, Civil Engineer, Chemical Engineer, Biomedical Engineer, Data Scientist, Machine Learning Engineer, DevOps Engineer, Site Reliability Engineer, Kernel Developer, Robotics Engineer, Quantum Computing Researcher, Penetration Tester, Flight Test Engineer, Marine Biologist, Geologist, Meteorologist, Epidemiologist, Pharmacologist, Patent Attorney, Tax Accountant, Actuary, Air Crash Investigator, Bomb Disposal Technician, Emergency Room Doctor, Anesthesiologist, Forensic Accountant, Supply Chain Manager, Quality Assurance Engineer, Technical Writer, UX Researcher, Scrum Master, Product Manager, Solutions Architect, Network Engineer, FPGA Engineer, Signal Processing Engineer, Control Systems Engineer, Power Grid Operator, Nuclear Reactor Operator, Oil Rig Engineer, Mining Engineer, Environmental Engineer, Traffic Engineer, Sound Engineer, Broadcast Engineer, Optical Engineer, Materials Scientist, Nanotechnology Researcher, Bioinformatics Scientist, Climate Scientist, Seismologist, Volcanologist, Oceanographer, Astrophysicist, Particle Physicist, Plasma Physicist, Statistician, Economist, Quant Trader, Blockchain Developer, Game Engine Developer, Graphics Programmer, Operating System Developer, Firmware Engineer, Satellite Engineer, Avionics Engineer, Ship Engineer, Locomotive Engineer, Elevator Inspector, Building Code Inspector, Fire Protection Engineer, Forensic Engineer, Reliability Engineer, Safety Engineer, Industrial Engineer, Agricultural Engineer, Food Scientist, Textile Engineer, Packaging Engineer, Acoustics Engineer, Photonics Engineer, Cryogenics Engineer, Geotechnical Engineer, Hydrology Engineer, Corrosion Engineer, Chief Technology Officer
+
+## Software Engineer Archetypes (602-651)
+
+10x Developer, Clever Developer, Code Golfer, Functional Programmer, Pragmatic Developer, Senior Engineer, Staff Engineer, TDD Practitioner, Bootcamp Grad, Performance Engineer, Clean Code Evangelist, Frontend Developer, Type Safety Zealot, Anxious Developer, Config-Driven Developer, Backend Developer, ML Engineer, Enterprise Java Dev, Over-Engineering Dev, Deadline Developer, Mobile Developer, Self-Taught Developer, DevOps-Minded Dev, Security Engineer, Embedded Developer, Database Developer, OOP Purist, Platform Engineer, Game Developer, Legacy Code Maintainer, Refactoring Addict, Fullstack Developer, Vim User, Principal Engineer, Startup Developer, Data Engineer, Tech Lead, Junior Engineer, Intern, AI-Assisted Developer, Copy-Paste Developer, Solo Developer, Architect, Tech Debt Warrior, Open Source Maintainer, Agile Developer, Waterfall Developer, OSS Contributor, Documentation Obsessed, Pair Programmer
 
 ## Fictional Personalities (500)
 
@@ -173,4 +181,4 @@ Wednesday Addams, Morticia Addams, Willy Wonka, Cat in the Hat, The Lorax, Winni
 
 ## Generated by
 
-Claude (Anthropic) via Claude Code — 60+ parallel subagents, each handling 10-20 personalities.
+Claude (Anthropic) via Claude Code — 75+ parallel subagents, each handling 10-20 personalities.

@@ -273,6 +273,7 @@ const categories = {
   'Star Wars (311-326,489-500)': personalities.filter(r => (parseInt(r.num) >= 311 && parseInt(r.num) <= 326) || (parseInt(r.num) >= 489 && parseInt(r.num) <= 500)),
   'Mythology (291-300)': personalities.filter(r => parseInt(r.num) >= 291 && parseInt(r.num) <= 300),
   'Professionals (501-600)': personalities.filter(r => parseInt(r.num) >= 501 && parseInt(r.num) <= 600),
+  'Software Engineers (602-651)': personalities.filter(r => parseInt(r.num) >= 602 && parseInt(r.num) <= 651),
 };
 
 const catScores = Object.entries(categories)

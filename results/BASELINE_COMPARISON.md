@@ -1,4 +1,4 @@
-# Baseline Comparison: "No Personality" vs 600 Personalities
+# Baseline Comparison: "No Personality" vs 651 Personalities
 
 ## The Baseline
 
@@ -21,20 +21,20 @@ console.log("Hello, World!");
 
 ## How Personalities Deviate from Baseline
 
-| Metric | Baseline | Avg (600) | Overhead | Interpretation |
+| Metric | Baseline | Avg (651) | Overhead | Interpretation |
 |--------|----------|-----------|----------|----------------|
-| Total Lines | 2 | 32.4 | +1,518% | Personality adds ~30 lines of overhead |
-| Total Characters | 30 | 932.7 | +3,009% | 31x more code to do the same thing |
-| Code Lines | 1 | 18.0 | +1,697% | |
-| Comment Lines | 0 | 7.3 | +7.3 | |
-| Comment Ratio | 0% | 46.4% | +46.4 | 46% of personality code is comments |
+| Total Lines | 2 | 33.4 | +1,570% | Personality adds ~31 lines of overhead |
+| Total Characters | 30 | 951.8 | +3,073% | 32x more code to do the same thing |
+| Code Lines | 1 | 18.7 | +1,771% | |
+| Comment Lines | 0 | 7.5 | +7.5 | |
+| Comment Ratio | 0% | 45.5% | +45.5 | 46% of personality code is comments |
 | Complexity Score | 0 | 1.8 | +1.8 | Unnecessary complexity added for flavor |
-| Signal-to-Noise | 97% | 49.9% | -49% | Personality reduces useful code density |
-| Chars per Output | 30 | 466.0 | +1,453% | 15.5x overhead per unit of output |
-| Exclamation Marks | 1 | 2.7 | +172% | |
-| ALL CAPS Words | 0 | 5.4 | +5.4 | |
-| console.log Count | 1 | 4.2 | +323% | |
-| Vocabulary Richness | 100% | 65.1% | -35% | |
+| Signal-to-Noise | 97% | 50.8% | -48% | Personality reduces useful code density |
+| Chars per Output | 30 | 476.8 | +1,489% | 15.9x overhead per unit of output |
+| Exclamation Marks | 1 | 2.6 | +160% | |
+| ALL CAPS Words | 0 | 5.6 | +5.6 | |
+| console.log Count | 1 | 4.1 | +314% | |
+| Vocabulary Richness | 100% | 64.4% | -36% | |
 
 ## Development Fitness Scoring
 
@@ -60,31 +60,31 @@ console.log("Hello, World!");
 | 3 | **John Lennon** | **80** | 76 | 100 | 100 | 66 | 20 | 90 | 93 | 92 |
 | 4 | Picasso | 79 | 82 | 90 | 75 | 62 | 60 | 100 | 95 | 69 |
 | 5 | Todd Alquist | 79 | 85 | 72 | 100 | 82 | 20 | 100 | 75 | 94 |
-| 6 | BoJack Horseman | 77 | 67 | 88 | 75 | 72 | 60 | 100 | 77 | 86 |
-| 7 | Professor Farnsworth | 77 | 73 | 72 | 100 | 81 | 20 | 100 | 80 | 92 |
-| 8 | Killua Zoldyck | 76 | 73 | 70 | 100 | 52 | 60 | 100 | 86 | 71 |
-| 9 | Bob Dylan | 76 | 76 | 90 | 75 | 71 | 40 | 100 | 95 | 45 |
-| 10 | Prince | 76 | 73 | 88 | 75 | 60 | 40 | 100 | 95 | 85 |
-| 11 | Isabelle | 76 | 64 | 52 | 100 | 90 | 60 | 90 | 75 | 90 |
-| 12 | Banksy | 75 | 79 | 78 | 50 | 78 | 40 | 100 | 95 | 93 |
-| 13 | C-3PO | 75 | 43 | 88 | 100 | 73 | 60 | 100 | 74 | 70 |
-| 14 | Ciri | 75 | 22 | 96 | 100 | 68 | 80 | 95 | 95 | 72 |
-| 15 | Makarov | 75 | 70 | 82 | 100 | 58 | 40 | 100 | 95 | 26 |
-| 16 | Gustavo Fring | 74 | 46 | 98 | 100 | 64 | 60 | 75 | 91 | 60 |
-| 17 | Princess Carolyn | 74 | 58 | 96 | 75 | 68 | 40 | 100 | 84 | 82 |
-| 18 | Bender | 74 | 70 | 68 | 75 | 82 | 60 | 100 | 58 | 94 |
-| 19 | Fry | 74 | 61 | 70 | 100 | 80 | 60 | 65 | 77 | 90 |
-| 20 | Courage | 74 | 58 | 72 | 100 | 80 | 40 | 75 | 85 | 91 |
-| 21 | Dustin Henderson | 74 | 43 | 90 | 100 | 61 | 80 | 100 | 57 | 71 |
-| 22 | Triss Merigold | 74 | 25 | 96 | 100 | 68 | 60 | 100 | 93 | 77 |
-| 23 | Mario | 73 | 40 | 96 | 100 | 64 | 80 | 95 | 57 | 53 |
-| 24 | The Dude | 73 | 52 | 72 | 100 | 52 | 60 | 100 | 91 | 79 |
-| 25 | Van Gogh | 73 | 73 | 92 | 50 | 62 | 40 | 100 | 95 | 95 |
-| 26 | The Hound | 73 | 67 | 90 | 75 | 60 | 60 | 75 | 95 | 49 |
-| 27 | Zapp Brannigan | 73 | 61 | 68 | 75 | 83 | 40 | 100 | 87 | 83 |
-| 28 | Tom Nook | 73 | 55 | 50 | 75 | 91 | 60 | 100 | 95 | 87 |
-| 29 | Frida Kahlo | 72 | 67 | 94 | 75 | 68 | 40 | 75 | 95 | 45 |
-| 30 | Chewbacca | 72 | 67 | 82 | 75 | 57 | 60 | 100 | 70 | 79 |
+| 6 | **10x Developer (SWE)** | **79** | 100 | 40 | 75 | 97 | 40 | 90 | 90 | 95 |
+| 7 | **Clever Developer (SWE)** | **78** | 67 | 88 | 100 | 62 | 60 | 100 | 90 | 50 |
+| 8 | BoJack Horseman | 77 | 67 | 88 | 75 | 72 | 60 | 100 | 77 | 86 |
+| 9 | Professor Farnsworth | 77 | 73 | 72 | 100 | 81 | 20 | 100 | 80 | 92 |
+| 10 | **Code Golfer (SWE)** | **77** | 100 | 40 | 75 | 98 | 40 | 65 | 100 | 95 |
+| 11 | Killua Zoldyck | 76 | 73 | 70 | 100 | 52 | 60 | 100 | 86 | 71 |
+| 12 | Bob Dylan | 76 | 76 | 90 | 75 | 71 | 40 | 100 | 95 | 45 |
+| 13 | Prince | 76 | 73 | 88 | 75 | 60 | 40 | 100 | 95 | 85 |
+| 14 | Isabelle | 76 | 64 | 52 | 100 | 90 | 60 | 90 | 75 | 90 |
+| 15 | Banksy | 75 | 79 | 78 | 50 | 78 | 40 | 100 | 95 | 93 |
+| 16 | C-3PO | 75 | 43 | 88 | 100 | 73 | 60 | 100 | 74 | 70 |
+| 17 | Ciri | 75 | 22 | 96 | 100 | 68 | 80 | 95 | 95 | 72 |
+| 18 | Makarov | 75 | 70 | 82 | 100 | 58 | 40 | 100 | 95 | 26 |
+| 19 | **Functional Programmer (SWE)** | **75** | 76 | 40 | 75 | 96 | 60 | 100 | 98 | 45 |
+| 20 | Gustavo Fring | 74 | 46 | 98 | 100 | 64 | 60 | 75 | 91 | 60 |
+| 21 | Princess Carolyn | 74 | 58 | 96 | 75 | 68 | 40 | 100 | 84 | 82 |
+| 22 | Bender | 74 | 70 | 68 | 75 | 82 | 60 | 100 | 58 | 94 |
+| 23 | Fry | 74 | 61 | 70 | 100 | 80 | 60 | 65 | 77 | 90 |
+| 24 | Courage | 74 | 58 | 72 | 100 | 80 | 40 | 75 | 85 | 91 |
+| 25 | Dustin Henderson | 74 | 43 | 90 | 100 | 61 | 80 | 100 | 57 | 71 |
+| 26 | Triss Merigold | 74 | 25 | 96 | 100 | 68 | 60 | 100 | 93 | 77 |
+| 27 | Mario | 73 | 40 | 96 | 100 | 64 | 80 | 95 | 57 | 53 |
+| 28 | **Pragmatic Developer (SWE)** | **73** | 100 | 40 | 50 | 96 | 20 | 100 | 95 | 95 |
+| 29 | The Dude | 73 | 52 | 72 | 100 | 52 | 60 | 100 | 91 | 79 |
+| 30 | Van Gogh | 73 | 73 | 92 | 50 | 62 | 40 | 100 | 95 | 95 |
 
 ### Bottom 10 — Worst for Day-to-Day Development
 
@@ -115,6 +115,7 @@ console.log("Hello, World!");
 | Star Wars (311-326, 489-500) | 57.3 | 28 |
 | Sitcom (081-100, 327-360) | 56.9 | 54 |
 | LOTR Extended (441-450) | 56.5 | 10 |
+| **Software Engineers (602-651)** | **55.9** | **50** |
 | Scientists (036-040, 251-260) | 55.2 | 15 |
 | Anime (001-020, 201-240) | 55.0 | 60 |
 | Superheroes (046-055) | 51.7 | 10 |
@@ -130,18 +131,18 @@ Trait comparison — Top 20 vs Bottom 20 personalities:
 
 | Trait | Top 20 | Bottom 20 | Delta |
 |-------|--------|-----------|-------|
-| Avg Lines | 16.4 | 28.0 | -11.6 |
-| Avg Characters | 415.5 | 743.3 | -327.8 |
-| Avg Comment Ratio | 24.6% | 82.4% | -57.8% |
-| Avg Complexity | 1.7 | 0.9 | +0.8 |
-| Avg Signal-to-Noise | 71.8% | 14.0% | +57.8% |
-| Avg Exclamations | 2.3 | 10.2 | -7.9 |
-| Avg ALL CAPS Words | 0.8 | 18.9 | -18.1 |
-| Avg console.logs | 3.6 | 1.4 | +2.3 |
+| Avg Lines | 14.6 | 30.0 | -15.4 |
+| Avg Characters | 384.4 | 807.8 | -423.4 |
+| Avg Comment Ratio | 22.8% | 84.0% | -61.2% |
+| Avg Complexity | 1.6 | 1.1 | +0.5 |
+| Avg Signal-to-Noise | 73.9% | 12.4% | +61.5% |
+| Avg Exclamations | 1.8 | 9.6 | -7.8 |
+| Avg ALL CAPS Words | 0.5 | 19.4 | -18.9 |
+| Avg console.logs | 2.9 | 1.5 | +1.4 |
 | Uses class (%) | 0.0% | 0.0% | 0.0 |
-| Uses arrow fn (%) | 40.0% | 5.0% | +35.0% |
-| Uses const (%) | 85.0% | 60.0% | +25.0% |
-| Modern JS score | 2.5 | 1.6 | +0.8 |
+| Uses arrow fn (%) | 50.0% | 10.0% | +40.0% |
+| Uses const (%) | 75.0% | 55.0% | +20.0% |
+| Modern JS score | 2.5 | 1.7 | +0.8 |
 
 ## Recommendation: Best Personality for Day-to-Day Development
 
@@ -164,10 +165,10 @@ Trait comparison — Top 20 vs Bottom 20 personalities:
 
 ### The Ideal "Developer Personality" Profile
 
-- Writes **16 lines** (vs 32 average)
-- **25% comments** (vs 46% average)
-- Complexity **1.7** (vs 1.8 average)
-- **72% signal-to-noise** (vs 50% average)
+- Writes **15 lines** (vs 33 average)
+- **23% comments** (vs 46% average)
+- Complexity **1.6** (vs 1.8 average)
+- **74% signal-to-noise** (vs 51% average)
 - **Minimal emotional noise** — no screaming, no ALL CAPS
 - **Uses modern JS features** appropriately
 
@@ -181,17 +182,20 @@ Trait comparison — Top 20 vs Bottom 20 personalities:
 | Kevin Hart | 35 | 33 | 71% | 24 | 87 |
 | Elaine Benes | 36 | 25 | 92% | 7 | 8 |
 
-## Professionals vs Fictional — The Key Insight
+## Three-Way Comparison — Professionals vs SWE Types vs Fictional
 
-| Metric | Professionals (100) | Fictional (500) | Delta |
-|--------|---------------------|-----------------|-------|
-| Avg Lines | 65.6 | 25.7 | +39.9 |
-| Avg Characters | 2,364 | 646 | +1,718 |
-| Avg Code Lines | 49.7 | 11.6 | +38.1 |
-| Avg Comment Lines | 4.9 | 7.8 | -2.9 |
-| Comment % | 7% | 30% | -23% |
-| Code-to-Total % | 76% | 45% | +31% |
-| Avg Complexity | 3.4 | 1.5 | +1.9 |
-| Avg Exclamations | 0.5 | 3.2 | -2.7 |
+| Metric | Professionals (101) | SWE Types (50) | Fictional (500) | Baseline |
+|--------|---------------------|----------------|-----------------|----------|
+| Avg Lines | 65.0 | 46.4 | 25.7 | 2 |
+| Avg Characters | 2,342 | 1,198 | 646 | 30 |
+| Avg Code Lines | 49.3 | 27.9 | 11.6 | 1 |
+| Comment % | 9.1% | 35.5% | 53.9% | 0% |
+| Signal-to-Noise | 88.1% | 60.5% | 42.2% | 97% |
+| Complexity | 3.4 | 2.6 | 1.5 | 0 |
+| Exclamations | 0.5 | 1.2 | 3.2 | 1 |
+| Modern JS Score | 3.8 | 2.9 | 2.3 | 1 |
+| Dev Fitness | 60.5 | 55.9 | 56.0 | N/A |
 
-**Professionals don't write "Hello World" — they build systems.** A NASA Engineer builds a pre-flight checklist. A Forensic Accountant builds an audit trail with Benford's Law analysis. An Anesthesiologist builds a drug dosage calculator. They produce 2.5x more actual code, use 2.3x higher complexity, maintain 76% signal-to-noise, and generate almost zero emotional noise. The fitness scoring penalizes their verbosity, but their code is the most *functional* — they're the only category that consistently solves a real domain problem instead of performing a character.
+**Professionals don't write "Hello World" — they build systems.** A NASA Engineer builds a pre-flight checklist. A Forensic Accountant builds an audit trail with Benford's Law analysis. An Anesthesiologist builds a drug dosage calculator. They produce 2.5x more actual code, use 2.3x higher complexity, maintain 88% signal-to-noise, and generate almost zero emotional noise.
+
+**SWE archetypes sit in the middle.** They write more code than fictional characters but more comments than professionals. The 10x Developer (79) and Code Golfer (77) score near the top globally, while process-oriented types like Pair Programmer (37) and Documentation Obsessed (38) score near the bottom — worse than fictional characters. The seniority U-curve is the key finding: juniors over-comment out of uncertainty, seniors write minimal clean code, then principals and architects get verbose again with architectural commentary.
