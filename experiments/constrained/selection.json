@@ -1,0 +1,608 @@
+{
+  "description": "Top 50 + bottom 50 personalities by dev fitness score for constrained experiment",
+  "count": 100,
+  "top50": [
+    {
+      "num": "264",
+      "name": "salvador dali",
+      "score": 81,
+      "category": "artists"
+    },
+    {
+      "num": "382",
+      "name": "doom slayer",
+      "score": 81,
+      "category": "video-games"
+    },
+    {
+      "num": "268",
+      "name": "john lennon",
+      "score": 80,
+      "category": "musicians"
+    },
+    {
+      "num": "262",
+      "name": "picasso",
+      "score": 79,
+      "category": "artists"
+    },
+    {
+      "num": "345",
+      "name": "todd",
+      "score": 79,
+      "category": "tv-drama"
+    },
+    {
+      "num": "606",
+      "name": "10x developer",
+      "score": 79,
+      "category": "software-engineers"
+    },
+    {
+      "num": "627",
+      "name": "clever developer",
+      "score": 78,
+      "category": "software-engineers"
+    },
+    {
+      "num": "346",
+      "name": "bojack",
+      "score": 77,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "351",
+      "name": "professor",
+      "score": 77,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "612",
+      "name": "code golfer",
+      "score": 77,
+      "category": "software-engineers"
+    },
+    {
+      "num": "012",
+      "name": "killua",
+      "score": 76,
+      "category": "anime"
+    },
+    {
+      "num": "267",
+      "name": "bob dylan",
+      "score": 76,
+      "category": "musicians"
+    },
+    {
+      "num": "270",
+      "name": "prince",
+      "score": 76,
+      "category": "musicians"
+    },
+    {
+      "num": "383",
+      "name": "isabelle",
+      "score": 76,
+      "category": "video-games"
+    },
+    {
+      "num": "266",
+      "name": "banksy",
+      "score": 75,
+      "category": "artists"
+    },
+    {
+      "num": "322",
+      "name": "c3po",
+      "score": 75,
+      "category": "star-wars"
+    },
+    {
+      "num": "365",
+      "name": "ciri",
+      "score": 75,
+      "category": "video-games"
+    },
+    {
+      "num": "401",
+      "name": "makarov",
+      "score": 75,
+      "category": "video-games"
+    },
+    {
+      "num": "613",
+      "name": "functional programmer",
+      "score": 75,
+      "category": "software-engineers"
+    },
+    {
+      "num": "344",
+      "name": "gus",
+      "score": 74,
+      "category": "tv-drama"
+    },
+    {
+      "num": "347",
+      "name": "carolyn",
+      "score": 74,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "349",
+      "name": "bender",
+      "score": 74,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "350",
+      "name": "fry",
+      "score": 74,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "360",
+      "name": "courage",
+      "score": 74,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "362",
+      "name": "dustin",
+      "score": 74,
+      "category": "tv-drama"
+    },
+    {
+      "num": "366",
+      "name": "triss",
+      "score": 74,
+      "category": "video-games"
+    },
+    {
+      "num": "101",
+      "name": "mario",
+      "score": 73,
+      "category": "video-games"
+    },
+    {
+      "num": "175",
+      "name": "the dude",
+      "score": 73,
+      "category": "action-film"
+    },
+    {
+      "num": "263",
+      "name": "van gogh",
+      "score": 73,
+      "category": "artists"
+    },
+    {
+      "num": "308",
+      "name": "hound",
+      "score": 73,
+      "category": "game-of-thrones"
+    },
+    {
+      "num": "352",
+      "name": "zapp",
+      "score": 73,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "384",
+      "name": "tom nook",
+      "score": 73,
+      "category": "video-games"
+    },
+    {
+      "num": "623",
+      "name": "pragmatic developer",
+      "score": 73,
+      "category": "software-engineers"
+    },
+    {
+      "num": "261",
+      "name": "frida kahlo",
+      "score": 72,
+      "category": "artists"
+    },
+    {
+      "num": "321",
+      "name": "chewbacca",
+      "score": 72,
+      "category": "star-wars"
+    },
+    {
+      "num": "363",
+      "name": "hopper",
+      "score": 72,
+      "category": "tv-drama"
+    },
+    {
+      "num": "602",
+      "name": "senior engineer",
+      "score": 72,
+      "category": "software-engineers"
+    },
+    {
+      "num": "233",
+      "name": "nezuko kamado",
+      "score": 71,
+      "category": "anime"
+    },
+    {
+      "num": "301",
+      "name": "tyrion",
+      "score": 71,
+      "category": "game-of-thrones"
+    },
+    {
+      "num": "303",
+      "name": "jon",
+      "score": 71,
+      "category": "game-of-thrones"
+    },
+    {
+      "num": "356",
+      "name": "korra",
+      "score": 71,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "368",
+      "name": "wheatley",
+      "score": 71,
+      "category": "video-games"
+    },
+    {
+      "num": "369",
+      "name": "elizabeth",
+      "score": 71,
+      "category": "video-games"
+    },
+    {
+      "num": "385",
+      "name": "kazuya",
+      "score": 71,
+      "category": "video-games"
+    },
+    {
+      "num": "201",
+      "name": "zoro",
+      "score": 70,
+      "category": "anime"
+    },
+    {
+      "num": "354",
+      "name": "kenny",
+      "score": 70,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "364",
+      "name": "geralt",
+      "score": 70,
+      "category": "video-games"
+    },
+    {
+      "num": "371",
+      "name": "ellie",
+      "score": 70,
+      "category": "video-games"
+    },
+    {
+      "num": "386",
+      "name": "sephiroth",
+      "score": 70,
+      "category": "video-games"
+    },
+    {
+      "num": "601",
+      "name": "software engineer",
+      "score": 70,
+      "category": "professionals"
+    }
+  ],
+  "bottom50": [
+    {
+      "num": "209",
+      "name": "hinata",
+      "score": 43,
+      "category": "anime"
+    },
+    {
+      "num": "220",
+      "name": "sokka",
+      "score": 43,
+      "category": "anime"
+    },
+    {
+      "num": "475",
+      "name": "macbeth",
+      "score": 43,
+      "category": "literary-characters"
+    },
+    {
+      "num": "476",
+      "name": "gandalf",
+      "score": 43,
+      "category": "lotr-tolkien"
+    },
+    {
+      "num": "642",
+      "name": "architect",
+      "score": 43,
+      "category": "software-engineers"
+    },
+    {
+      "num": "644",
+      "name": "tech debt warrior",
+      "score": 43,
+      "category": "software-engineers"
+    },
+    {
+      "num": "008",
+      "name": "edward",
+      "score": 42,
+      "category": "anime"
+    },
+    {
+      "num": "030",
+      "name": "keanu reeves",
+      "score": 42,
+      "category": "celebrities"
+    },
+    {
+      "num": "034",
+      "name": "bob ross",
+      "score": 42,
+      "category": "celebrities"
+    },
+    {
+      "num": "330",
+      "name": "sheldon cooper",
+      "score": 42,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "338",
+      "name": "george costanza",
+      "score": 42,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "420",
+      "name": "pratchett",
+      "score": 42,
+      "category": "literary-authors"
+    },
+    {
+      "num": "061",
+      "name": "gollum",
+      "score": 41,
+      "category": "lotr-tolkien"
+    },
+    {
+      "num": "090",
+      "name": "peter griffin",
+      "score": 41,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "200",
+      "name": "kermit",
+      "score": 41,
+      "category": "childrens-characters"
+    },
+    {
+      "num": "226",
+      "name": "jotaro kujo",
+      "score": 41,
+      "category": "anime"
+    },
+    {
+      "num": "332",
+      "name": "joey tribbiani",
+      "score": 41,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "472",
+      "name": "puck",
+      "score": 41,
+      "category": "literary-characters"
+    },
+    {
+      "num": "620",
+      "name": "open source maintainer",
+      "score": 41,
+      "category": "software-engineers"
+    },
+    {
+      "num": "029",
+      "name": "morgan freeman",
+      "score": 40,
+      "category": "celebrities"
+    },
+    {
+      "num": "067",
+      "name": "snape",
+      "score": 40,
+      "category": "literary-characters"
+    },
+    {
+      "num": "188",
+      "name": "picard",
+      "score": 40,
+      "category": "star-trek"
+    },
+    {
+      "num": "189",
+      "name": "doctor",
+      "score": 40,
+      "category": "doctor-who-bbc"
+    },
+    {
+      "num": "336",
+      "name": "rachel green",
+      "score": 40,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "432",
+      "name": "robin williams",
+      "score": 40,
+      "category": "filmmakers-comedians"
+    },
+    {
+      "num": "478",
+      "name": "smaug",
+      "score": 40,
+      "category": "lotr-tolkien"
+    },
+    {
+      "num": "645",
+      "name": "agile developer",
+      "score": 40,
+      "category": "software-engineers"
+    },
+    {
+      "num": "068",
+      "name": "dobby",
+      "score": 39,
+      "category": "literary-characters"
+    },
+    {
+      "num": "186",
+      "name": "spock",
+      "score": 39,
+      "category": "star-trek"
+    },
+    {
+      "num": "646",
+      "name": "waterfall developer",
+      "score": 39,
+      "category": "software-engineers"
+    },
+    {
+      "num": "649",
+      "name": "open source contributor",
+      "score": 39,
+      "category": "software-engineers"
+    },
+    {
+      "num": "027",
+      "name": "gordon ramsay",
+      "score": 38,
+      "category": "celebrities"
+    },
+    {
+      "num": "339",
+      "name": "jerry seinfeld",
+      "score": 38,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "436",
+      "name": "chris rock",
+      "score": 38,
+      "category": "filmmakers-comedians"
+    },
+    {
+      "num": "624",
+      "name": "documentation obsessed",
+      "score": 38,
+      "category": "software-engineers"
+    },
+    {
+      "num": "071",
+      "name": "donkey",
+      "score": 37,
+      "category": "literary-characters"
+    },
+    {
+      "num": "433",
+      "name": "jim carrey",
+      "score": 37,
+      "category": "filmmakers-comedians"
+    },
+    {
+      "num": "438",
+      "name": "amy poehler",
+      "score": 37,
+      "category": "filmmakers-comedians"
+    },
+    {
+      "num": "647",
+      "name": "pair programmer",
+      "score": 37,
+      "category": "software-engineers"
+    },
+    {
+      "num": "187",
+      "name": "kirk",
+      "score": 36,
+      "category": "star-trek"
+    },
+    {
+      "num": "194",
+      "name": "cat hat",
+      "score": 36,
+      "category": "childrens-characters"
+    },
+    {
+      "num": "199",
+      "name": "cookie monster",
+      "score": 36,
+      "category": "childrens-characters"
+    },
+    {
+      "num": "318",
+      "name": "anakin",
+      "score": 36,
+      "category": "star-wars"
+    },
+    {
+      "num": "319",
+      "name": "palpatine",
+      "score": 36,
+      "category": "star-wars"
+    },
+    {
+      "num": "337",
+      "name": "cosmo kramer",
+      "score": 36,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "340",
+      "name": "elaine benes",
+      "score": 36,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "437",
+      "name": "kevin hart",
+      "score": 35,
+      "category": "filmmakers-comedians"
+    },
+    {
+      "num": "335",
+      "name": "monica geller",
+      "score": 34,
+      "category": "tv-sitcoms"
+    },
+    {
+      "num": "070",
+      "name": "shrek",
+      "score": 33,
+      "category": "literary-characters"
+    },
+    {
+      "num": "190",
+      "name": "dalek",
+      "score": 28,
+      "category": "doctor-who-bbc"
+    }
+  ]
+}
