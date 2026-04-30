@@ -1,0 +1,42 @@
+{
+  "variant-a": {
+    "name": "Readability",
+    "count": 100,
+    "avgScore": 66.88,
+    "avgDelta": 10.32,
+    "medianDelta": 7.5,
+    "stddev": 6.192382417131552,
+    "top50AvgDelta": -4.36,
+    "bottom50AvgDelta": 25
+  },
+  "variant-b": {
+    "name": "Structure",
+    "count": 100,
+    "avgScore": 71.65,
+    "avgDelta": 15.09,
+    "medianDelta": 14.5,
+    "stddev": 1.4722431864335472,
+    "top50AvgDelta": -2.6,
+    "bottom50AvgDelta": 32.78
+  },
+  "variant-c": {
+    "name": "Algorithm",
+    "count": 100,
+    "avgScore": 77.07,
+    "avgDelta": 20.51,
+    "medianDelta": 21,
+    "stddev": 3.7101347684417094,
+    "top50AvgDelta": 6.12,
+    "bottom50AvgDelta": 34.9
+  },
+  "variant-d": {
+    "name": "All Combined",
+    "count": 100,
+    "avgScore": 74,
+    "avgDelta": 17.44,
+    "medianDelta": 17.5,
+    "stddev": 0,
+    "top50AvgDelta": -0.02,
+    "bottom50AvgDelta": 34.9
+  }
+}
