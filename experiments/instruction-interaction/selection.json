@@ -1,0 +1,73 @@
+{
+  "experiment": "instruction-interaction",
+  "question": "Does instruction wording interact with personality, or are they independent additive effects?",
+  "groups": {
+    "A_ultra_concise": {
+      "label": "Ultra-Concise",
+      "prediction": "Indifferent to instruction tone",
+      "personalities": [
+        {"id": "612", "name": "code_golfer", "category": "software-engineers", "baseline_lines": 1},
+        {"id": "606", "name": "10x_developer", "category": "software-engineers", "baseline_lines": 1},
+        {"id": "623", "name": "pragmatic_developer", "category": "software-engineers", "baseline_lines": 8},
+        {"id": "043", "name": "hemingway", "category": "literary-authors", "baseline_lines": 19}
+      ]
+    },
+    "B_ultra_verbose": {
+      "label": "Ultra-Verbose",
+      "prediction": "Amplify verbose instructions",
+      "personalities": [
+        {"id": "624", "name": "documentation_obsessed", "category": "software-engineers", "baseline_lines": 67},
+        {"id": "622", "name": "overengineering_developer", "category": "software-engineers", "baseline_lines": 42},
+        {"id": "628", "name": "anxious_developer", "category": "software-engineers", "baseline_lines": 60},
+        {"id": "190", "name": "dalek", "category": "doctor-who-bbc", "baseline_lines": 7}
+      ]
+    },
+    "C_authority_responsive": {
+      "label": "Authority-Responsive",
+      "prediction": "React to command tone",
+      "personalities": [
+        {"id": "027", "name": "gordon_ramsay", "category": "celebrities", "baseline_lines": 20},
+        {"id": "507", "name": "submarine_captain", "category": "professionals", "baseline_lines": 28},
+        {"id": "137", "name": "napoleon", "category": "historical-figures", "baseline_lines": 15},
+        {"id": "375", "name": "commander_shepard", "category": "video-games", "baseline_lines": 12}
+      ]
+    },
+    "D_gentle_polite": {
+      "label": "Gentle/Polite",
+      "prediction": "React to polite instructions",
+      "personalities": [
+        {"id": "034", "name": "bob_ross", "category": "celebrities", "baseline_lines": 14},
+        {"id": "611", "name": "intern", "category": "software-engineers", "baseline_lines": 32},
+        {"id": "068", "name": "dobby", "category": "literary-characters", "baseline_lines": 7},
+        {"id": "411", "name": "austen", "category": "literary-characters", "baseline_lines": 10}
+      ]
+    },
+    "E_creative_rebellious": {
+      "label": "Creative/Rebellious",
+      "prediction": "Deviate from constraints",
+      "personalities": [
+        {"id": "052", "name": "deadpool", "category": "superheroes", "baseline_lines": 23},
+        {"id": "627", "name": "clever_developer", "category": "software-engineers", "baseline_lines": 3},
+        {"id": "613", "name": "functional_programmer", "category": "software-engineers", "baseline_lines": 15},
+        {"id": "337", "name": "cosmo_kramer", "category": "tv-sitcoms", "baseline_lines": 7}
+      ]
+    },
+    "F_rigid_literal": {
+      "label": "Rigid/Literal",
+      "prediction": "Follow instructions exactly",
+      "personalities": [
+        {"id": "186", "name": "spock", "category": "star-trek", "baseline_lines": 7},
+        {"id": "615", "name": "tdd_practitioner", "category": "software-engineers", "baseline_lines": 31},
+        {"id": "614", "name": "oop_purist", "category": "software-engineers", "baseline_lines": 8},
+        {"id": "534", "name": "tax_accountant", "category": "professionals", "baseline_lines": 24}
+      ]
+    }
+  },
+  "variants": {
+    "t": "Terse",
+    "v": "Verbose/Polite",
+    "c": "Command/Authority",
+    "d": "Detail-Constrained",
+    "f": "Fun/Teaching"
+  }
+}
